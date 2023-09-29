@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.box1{ width: 300px; height: 50px; border: 1px solid #333; }
+			.sanjiao{ width: 10px;
+			          height: 10px; 
+					  border: 1px solid #333; 
+					  border-top: none; 
+					  border-left:none ;
+					  float: right;
+					  position: relative;
+					  top: 15px;
+					  right: 10px;
+					  transform: rotate(45deg);
+					  transition: all 0.6s; 
+					  }
+		    .box1:hover .sanjiao{  /* 鼠标滑动到box1上面给三角形增加样式 */
+
+				 transform: rotate(225deg);
+			}			  
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="sanjiao">
+				
+			</div>
+		</div>
+		
+	</body>
+</html>

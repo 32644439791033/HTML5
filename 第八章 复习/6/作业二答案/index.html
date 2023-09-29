@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dom</title>
+</head>
+<body> 
+<div style="float: left">手机号码：<input type="text" id = 'phone'></div>
+<div id='err' ></div>
+  <br><br>
+<input type="button" value="验证发送" onClick="check()" id = 'btm' > 
+<script> 
+    
+    function setbtm(i){  //定义这个函数 就是为了 使用setTimeout 定时器来修改按钮  进行到时间的展示
+    document.getElementById('btm').value= '间隔'+i+'秒后重新发送';   
+    i--;    
+     if(i == 0){   //判断倒计时完毕了   我们需要 把disbled属性去掉让按钮可以使用  里面的文字改成 验证发送
+         document.getElementById('btm').disabled = false;
+         document.getElementById('btm').value = '验证发送';
+         return true;    
+     }           
+    setTimeout('setbtm("'+i+'")',1000);//'setbtm("'+i+'")''
+     
+    }
+
+    function check(){
+       var phone = document.getElementById('phone').value;  //拿到了用户的手机号码
+       var reg =/^(13[0-9]|14[57]|15[012356789]|17[07]|18[0-9])\d{8}$/;  // 正则表达式
+        if(reg.test(phone)){      
+             //document.getElementById('err').style.display = 'none';
+        document.getElementById('err').innerHTML=' ';  //去掉刚才的红色错误提醒
+        document.getElementById('btm').disabled = true;   //设置成不能点击
+        setbtm(10);
+      
+        }else{  //不是手机号码  后面用红色的字提示手机号码不正确  （1.innerhtml  2.display:none）
+            
+        //document.getElementById('err').style.display = 'block';
+        document.getElementById('err').innerHTML='<font style="color:red">手机格式不正确</font>';
+            
+        }
+        
+        
+        
+    }
+    
+    
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>isNaN用法</title>
+<script type= " text/javascript">
+  
+function sum()
+{
+	var num1=parseFloat(document.myform.first.value);
+	var num2=parseFloat(document.myform.second.value);
+	if(isNaN(num1)==true)
+	{
+		alert(document.myform.first.value+"不能转换为一个数字！");
+		return false;
+	}
+	if(isNaN(num2)==true)
+	{
+		alert(document.myform.second.value+"不能转换为一个数字！");
+		return false;
+	}
+	document.myform.result.value =num1+num2;
+}
+      
+function jian()
+{
+	var num1=parseFloat(document.myform.first.value);
+	var num2=parseFloat(document.myform.second.value);
+	if(isNaN(num1)==true)
+	{
+		alert(document.myform.first.value+"不能转换为一个数字！");
+		return;
+	}
+	if(isNaN(num2)==true)
+	{
+		alert(document.myform.second.value+"不能转换为一个数字！");
+		return;
+	}
+	document.myform.result.value =num1-num2;
+}
+    
+ function chu()
+{
+	var num1=parseFloat(document.myform.first.value);
+	var num2=parseFloat(document.myform.second.value);
+	if(isNaN(num1)==true)
+	{
+		alert(document.myform.first.value+"不能转换为一个数字！");
+		return;
+	}
+	if(isNaN(num2)==true)
+	{
+		alert(document.myform.second.value+"不能转换为一个数字！");
+		return;
+	}
+	document.myform.result.value =num1/num2;
+}  
+function chen()
+{
+	var num1=parseFloat(document.myform.first.value);
+	var num2=parseFloat(document.myform.second.value);
+	if(isNaN(num1)==true)
+	{
+		alert(document.myform.first.value+"不能转换为一个数字！");
+		return;
+	}
+	if(isNaN(num2)==true)
+	{
+		alert(document.myform.second.value+"不能转换为一个数字！");
+		return;
+	}
+	document.myform.result.value =num1*num2;
+}
+</script>
+<body style=" font-size: 20px;">
+<form name="myform">
+    操作数一:
+    <input type="text" name="first" size="6">
+    操作数二:
+    <input type="text" name="second" size="6">
+    
+    <input type="button" value="相加" onClick="sum()">
+    &nbsp;
+    <input type="button" value="相减" onClick="jian()">
+    &nbsp;
+    <input type="button" value="相乘" onClick="chen()">
+    &nbsp;
+    <input type="button" value="相除" onClick="chu()">
+    &nbsp; 运行结果：
+    <input type="text" name="result" size="6">
+</form>
+</body>
+</html>

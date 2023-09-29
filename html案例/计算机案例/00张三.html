@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+input
+{
+	width:50px;
+	height:50px;
+	font-size:16px;
+}
+</style>
+<script type="text/javascript">
+var n1 = -1;
+var n2 = -1;
+var op = "";
+var re = true;
+
+function clickNum(num){
+	if(re == true){
+		form1.txt.value = num;
+		re = false;
+	}else{
+		form1.txt.value = form1.txt.value + num;
+	}
+	
+	
+}
+function clickOp(opt)
+{
+	re = true;
+	op = opt;
+	n1 = parseFloat(form1.txt.value);
+	n2 = -1;
+	
+}
+function clickDeng()
+{
+	
+		if(n2 == -1)
+		{
+			n2 = parseFloat(form1.txt.value);
+		}
+		if(n1 != -1 && op != "")
+		{
+			if(op == "+")
+			{
+				form1.txt.value = n1+n2;
+			}
+			else if(op == "-")
+			{
+				form1.txt.value = n1-n2;
+			}
+			else if(op == "*")
+			{
+				form1.txt.value = n1*n2;
+			}
+			else
+			{
+				if(n2 == 0)
+				{
+					form1.txt.value = "0";
+				}
+				else
+				{
+					form1.txt.value = n1/n2;
+				}
+			}			
+			n1 = parseFloat(form1.txt.value);
+			re = true;
+		}
+	
+	
+}
+function clickC()
+{
+	n1 = -1;
+	n2 = -1;
+	op = "";
+	re = true;
+	form1.txt.value = "0";
+	is = true;
+}
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="" border="0" cellspacing="10" cellpadding="0" align="center">
+    <tr>
+      <td colspan="4"><input name="txt" type="text" id="txt" style="width:240px; text-align:right; font-size:20px" value="0" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="btn1" id="btn1" value="1" onclick="clickNum('1')" /></td>
+      <td><input type="button" name="btn2" id="btn2" value="2" onclick="clickNum('2')" /></td>
+      <td><input type="button" name="btn3" id="btn3" value="3" onclick="clickNum('3')" /></td>
+      <td><input type="button" name="btnjia" id="btnjia" value="+" onclick="clickOp('+')" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="btn4" id="btn4" value="4" onclick="clickNum('4')" /></td>
+      <td><input type="button" name="btn5" id="btn5" value="5" onclick="clickNum('5')" /></td>
+      <td><input type="button" name="btn6" id="btn6" value="6" onclick="clickNum('6')" /></td>
+      <td><input type="button" name="btnjian" id="btnjian" value="-" onclick="clickOp('-')"  /></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="btn7" id="btn7" value="7" onclick="clickNum('7')" /></td>
+      <td><input type="button" name="btn8" id="btn8" value="8" onclick="clickNum('8')" /></td>
+      <td><input type="button" name="btn9" id="btn9" value="9" onclick="clickNum('9')" /></td>
+      <td><input type="button" name="btncheng" id="btncheng" value="*" onclick="clickOp('*')" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="btnc" id="btnc" value="c"  onclick="clickC()"/></td>
+      <td><input type="button" name="btn0" id="btn0" value="0" onclick="clickNum('0')" /></td>
+      <td><input type="button" name="btndeng" id="btndeng" value="=" onclick="clickDeng()" /></td>
+      <td><input type="button" name="btnchu" id="btnchu" value="/" onclick="clickOp('/')" /></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

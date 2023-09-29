@@ -1,0 +1,43 @@
+3.用户名的长度必须是3到6 个字符  而且必须输入的必须是小写字母  如果不符合输入规则  弹出提示框 您输入的用户名格式不正确
+
+var username  = document.myform.username.value;  //获取到用户输入的用户名
+if(username.length<3 || username.length>6){
+    alert('您输入的用户名格式不正确');
+    return false;
+}
+//用户输入了一个 xiaoming
+var len = username.length //获取到用户输入信息的长度
+for(var i=0 ; i<len;i++){   //怎么获取一个一个的字母呢？  我们学过 字符串截取  
+  var ch = username.substr(i,1);     // 第一次循环 那我们就取第一个字母 x  用substr(位置，个数)                                     substr(0,1)
+     if(ch >= 'a' && ch<='z'){
+         //  都是小写
+         
+     }else{ 
+         alert('您输入的用户名格式不正确');
+         return false;
+     }  
+                            // 第二次循环 那我们就取第二个字母 i  用substr(位置，个数) substr(1,1)
+                            // 第三次循环 那我们就取第三个字母 a  用substr(位置，个数) substr(2,1)
+                            // 第N次循环 那我们就取第N个字母   用substr(位置，个数) substr(n-1,1)
+  
+}
+
+4.用户输入的密码必须大于6位  小于12的字符   否则弹出提示框报错
+
+
+var password = document.myform.password.value;
+ if(password.length<6 || password.length>12){
+     alert('您输入的密码格式不正确');
+ }
+
+
+5. 用户输入的email信息  必须包含@  而且长度必须大于10个字符   否则弹出提示框报错
+
+var  email =document.myform.email.value;
+if(email.length<10 || email.indexOf('@') == -1){
+     alert('您输入的email格式不正确');
+}
+
+6.如果所填写的信息都正确 则提示 您输入的信息都是正确的 
+
+alert('您输入的信息都是正确的 ');

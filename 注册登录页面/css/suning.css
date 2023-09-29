@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0;}
+body{ background: #f8f8f8}
+.page{width: 1000px; background:#fff; height: 800px; margin:0 auto;padding-top: 20px;}
+.banner{background:url("../img/banner.png"); width:952px; height: 199px; margin: 0 auto;}
+.box{width:700px; height: 199px; margin: 0 auto;}
+.box ul{list-style: none;}
+.box ul li{ float: left; width: 600px; height: 50px;  margin: 0 auto; line-height: 50px; margin-top: 35px;}
+.star{ float: left; color: red; width: 10px; height: 5px;}
+.inputbox{ border:1px solid #8A8888; width: 550px; margin-left: 20px; height: 50px;float: left; padding-left: 10px;}
+.inputbox input {height: 45px; width: 400px; margin-left: 10px; border: none}
+.notice{ color:#666; float: left; margin: -12px 0 0 30px; }
+.send-msg{ width: 155px; height: 50px; position: relative; top: -1px; border: none; border-left:1px #666 solid}
+.xieyi{width:600px; margin: 20px 0 0 30px;  float: left}
+#xieyi_notice{width:600px; margin: 0 0 25px 30px;  float: left; height: 5px; }
+.submit{width: 600px; background: #ff6600; height: 50px; border: none; color: #fff; font-size: 16px;cursor:pointer}
+.showbox{width: 700px; border: 8px solid #ccc; height: 500px; margin: 0 auto; position: relative; top:-630px; background: #fff; clear: both}
+.head_box{width: 660px; float: left; margin: 20px 0 0 20px; border-bottom: 2px solid #ccc; padding-bottom: 10px;font-size: 20px;}
+.body_box{width: 660px; float: left; margin: 20px 0 0 20px; line-height: 25px;}
+.xieyi_btn{width: 300px; background: #ff6600; height: 50px; border: none; color: #fff; font-size: 16px; margin:10px 0 0 180px; cursor:pointer; }
