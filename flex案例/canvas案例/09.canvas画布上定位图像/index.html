@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>09.canvas画布上定位图像</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				display: block;  //转换成块级元素
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 使用canvas只需要在html文件中 加入 canvas标签即可  <canvas></canvas>   canvas是双标签  行内元素 -->
+		<canvas id="" width="500" height="500"></canvas>
+		<script type="text/javascript">
+		
+			var canvas = document.querySelector("canvas")
+			var ctx = canvas.getContext('2d');
+			var img = new Image();
+			img.src = "img/picfront.jpg"
+			  
+			// var img=document.getElementById("scream");  //从页面获取图片的方式
+
+			img.onload = function() {
+			//  ctx.drawImage(img,0,0);    //在画布上放置图像的 x 坐标位置。        在画布上放置图像的 y 坐标位置。
+			//   ctx.drawImage(img,80,0,100,100);  //在画布上放置图像的 x 坐标位置。  在画布上放置图像的 y 坐标位置。  width,height  设置图片的高度和宽度
+			     ctx.drawImage(img,100,100,100,100,50,50,500,500);
+			   // ctx.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);  
+			//   sx可选。开始剪切的 x 坐标位置。  sy可选。开始剪切的 y 坐标位置。     截取swidth宽度    截取的sheight高度   在画布上放置图像的 x 坐标位置。  在画布上放置图像的 y 坐标位置。  width,height  设置图片的高度和宽度
+			}
+			
+		</script>
+	</body>
+</html>

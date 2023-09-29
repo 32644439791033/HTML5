@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>08.canvas clearRect()方法</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				display: block;  //转换成块级元素
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 使用canvas只需要在html文件中 加入 canvas标签即可  <canvas></canvas>   canvas是双标签  行内元素 -->
+		<canvas id="" width="500" height="500"></canvas>
+		<script type="text/javascript">
+		
+			var canvas = document.querySelector("canvas")
+			var ctx = canvas.getContext('2d');
+			
+			// 		ctx.rect(x,y,w,h);	//绘制一个矩形     矩形里面是没有填充颜色的
+	// 		（xx坐标；yy坐标；w宽度；h高度）
+	// 		ctx.stroke();
+	
+
+		    ctx.beginPath()
+			ctx.fillStyle="blue"  //设置填充颜色
+			ctx.fillRect(100,100,300,200);	//绘制一个实心矩形  填充颜色必须先设置好   在去画画
+			
+			ctx.clearRect(0,0,500,500);  //在给定矩形内清空一个矩形： (清空画布)
+	
+		</script>
+
+	</body>
+</html>

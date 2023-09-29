@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			div{ 
+				/*给父亲设置flex属性*/
+				width: 80%;
+				background-color: aqua;
+				height: 900px;
+				display: flex;
+				flex-direction: row;  /*默认的主轴是X轴    我们的元素是跟着主轴排列的   横着排列（从左到右）*/
+				justify-content: flex-start; /*默认的   往左边排列*/
+				justify-content: flex-end; /* 往右边排列   元素的顺序没有翻转*/
+				justify-content: center; /* 居中 */
+				justify-content: space-around;/*平均分配*/
+				justify-content: space-between;/*左右2边先贴边  在平分剩余空间（比较重要   经常用）*/	
+
+				 /*将主轴设置成Y轴    设置上下居中*/
+				/* flex-direction: column;
+				justify-content: center; */
+			}
+			span{ width: 200px; height: 200px; background-color: coral; }
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+		</div>
+		
+	</body>
+</html>

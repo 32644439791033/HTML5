@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			div{ 
+				/*给父亲设置flex属性*/
+				width:80%;
+				background-color: black;
+				height: 100px;
+				display: flex;
+				margin: 0 auto;
+		
+			}
+			div span:nth-child(1){
+				 width: 100px; height: 100px; background-color: brown;
+			 }
+			div span:nth-child(2){ 
+				 flex:1 ; background-color: yellow;  //2号这1个盒子去分配剩余的空间  将剩余空间分成1份  所有占了所有的剩余空间  
+				 }
+			div span:nth-child(3){
+				width: 100px; height: 100px; background-color: #00FFFF;
+			}
+			
+
+			p{
+				/*给父亲设置flex属性*/
+				width:80%;
+			    background-color: #000000;
+				height: 100px;
+				display: flex;
+				margin: 20px auto;		
+			}
+			p span{
+				 flex:1 ; height: 100px; background-color: brown;/*实现3个盒子去分配剩余空间 就会把剩余空间分成3份  要平均分配的话 3个盒子各占1份 */
+			 }
+		    p span:nth-child(2){
+				flex:2; background-color: darkgreen;
+			} 
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+		</div>
+		
+		<p>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+		</p>
+		
+	</body>
+</html>

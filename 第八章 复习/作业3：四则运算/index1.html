@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<body>
+    <script>
+        function yusuan(op){
+            var num1 = parseFloat(document.myform.wenjin1.value);
+            if(isNaN(num1)){
+                alert('格式不正确请重新输入');
+                return false;
+            }  
+            var num2 = parseFloat(document.myform.wenjin2.value);
+            if(isNaN(num2)){
+                alert('格式不正确请重新输入');
+                return false;
+            } 
+            switch(op){
+                case "+": document.myform.wenjin3.value = num1 + num2;
+                break;
+                case "-": document.myform.wenjin3.value = num1 - num2;
+                break;
+                case "*": document.myform.wenjin3.value = num1 * num2;
+                break;
+                case "/": document.myform.wenjin3.value = num1 / num2;
+                break;
+                default: alert("计算符错误");              
+            }
+        }
+    </script>
+    <form name = "myform">
+    第一个数<input  name="wenjin1"> &nbsp;&nbsp;第二个数  <input name="wenjin2">&nbsp;&nbsp; 结果<input name="wenjin3"> <br> 
+    <input type="button" value="+" onClick="yusuan('+')">
+    <input type="button" value="-" onClick="yusuan('-')">
+    <input type="button" value="*" onClick="yusuan('*')">
+    <input type="button" value="/" onClick="yusuan('/')">
+    
+    </form>
+    
+</body>
+</html>

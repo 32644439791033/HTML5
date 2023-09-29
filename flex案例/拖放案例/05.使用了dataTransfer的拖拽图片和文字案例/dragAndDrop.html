@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>拖放</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 300px;
+            background: #888;
+        }
+
+        img {
+            width: 300px;
+            transition: 5s;
+        }
+        p{
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+			//找到被拖拽的元素
+			var img = document.querySelector("img");
+			var p1 = document.querySelector("p");
+			
+			//找到目的元素
+			var box1 = document.getElementById("box1");
+			
+			//拖拽元素的步骤
+			/*
+			1. 记录拖拽元素      给拖拽的元素绑定 ondragstart事件
+			2. 设置目的元素的阻止事件    给目的元素绑定 ondragover事件  并且使用event.preventDefault();阻止事件默认行为
+			3.将被托转元素设置为目的地元素的子元素   给目的元素绑定 ondrop事件  使用appendChild方法 将拖拽元素变成目的元素的子元素 
+			*/
+			
+			img.ondragstart =function(e){
+				//console.log(e.target)
+				e.dataTransfer.setData("target_id",e.target.id)   //该属性（对象）用于保存拖放过程中的数据    把拖动的元素的id值保存在target_id里面   存储一个键值对 : value值必须是字符串
+				console.log(e.dataTransfer.getData("target_id"))
+			}
+			
+			box1.addEventListener("dragover",function(){  //设置目的元素的阻止事件    给目的元素绑定 ondragover事件  并且使用event.preventDefault();阻止事件默认行为
+				event.preventDefault();  
+			})
+			
+            box1.addEventListener("drop",function(e){
+			   var target_id = e.dataTransfer.getData("target_id")   //获取存放的拖动的元素的id值
+			   this.appendChild(document.getElementById(target_id))
+          })
+          
+        }
+		
+    </script>
+</head>
+<body>
+<div class="box1" id="box1"></div>
+<img id="img1" src="img/2.jpg" alt=""/>
+<p id="p1" draggable="true">将我拖到上面的div中去吧！</p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>05.canvas画矩形</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				display: block;  //转换成块级元素
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 使用canvas只需要在html文件中 加入 canvas标签即可  <canvas></canvas>   canvas是双标签  行内元素 -->
+		<canvas id="" width="500" height="500"></canvas>
+		<script type="text/javascript">
+		
+	// 		ctx.rect(x,y,w,h);	//绘制一个矩形     矩形里面是没有填充颜色的	// 		（xx坐标；yy坐标；w宽度；h高度）	// 		ctx.stroke();
+	
+			var canvas = document.querySelector("canvas")
+			var ctx = canvas.getContext('2d');
+			
+			ctx.beginPath()
+		    ctx.moveTo(50,450);
+	    	ctx.lineTo(470,450);
+		    ctx.strokeStyle = "black"
+			ctx.lineWidth = 5;
+		    ctx.stroke();
+		    ctx.closePath()
+			
+			
+			// ctx.beginPath()
+			// ctx.fillStyle="rgb(0,0,255)"  //设置填充颜色
+			// ctx.fillRect(60,100,50,350);	//绘制一个矩形  填充颜色必须先设置好   在去画画
+			
+			// ctx.beginPath()
+			// ctx.fillStyle="yellow"  //设置填充颜色
+			// ctx.fillRect(130,100,50,350);	//绘制一个矩形  填充颜色必须先设置好   在去画画
+			
+			// ctx.beginPath()
+			// ctx.fillStyle="yellow"  //设置填充颜色
+			// ctx.fillRect(200,100,50,350);	//绘制一个矩形  填充颜色必须先设置好   在去画画
+			
+			// ctx.beginPath()
+			// ctx.fillStyle="rbg(255,200,100)"  //设置填充颜色
+			// ctx.fillRect(270,100,50,350);	//绘制一个矩形  填充颜色必须先设置好   在去画画
+			
+			// ctx.beginPath()
+			// ctx.fillStyle="yellow"  //设置填充颜色
+			// ctx.fillRect(340,100,50,350);	//绘制一个矩形  填充颜色必须先设置好   在去画画
+			
+			// ctx.beginPath()
+			// ctx.fillStyle="yellow"  //设置填充颜色
+			// ctx.fillRect(410,100,50,350);	//绘制一个矩形  填充颜色必须先设置好   在去画画
+			
+			
+			
+			for(var i = 0 ; i<6; i++){
+				ctx.beginPath()
+				ctx.fillStyle="rgb("+getRandom(0, 255)+","+getRandom(0, 255)+","+getRandom(0, 255)+")"  //设置填充颜色
+				
+				var height = 200+getRandom(0, 200)
+				
+				ctx.fillRect(60+70*i,450-height,50,height);	//绘制一个矩形  填充颜色必须先设置好   在去画画    
+				                                    //如果我们的高度要改成随机的话   那么我们则要算  y坐标的值   确保矩形下边与下面的线重合
+													// 下面的线的Y坐标是 450    如果高度是350  则  矩形的y坐标是   450 - 350  =100  根据公式  那么矩形Y坐标则是  450-矩形高度
+			}
+	
+			
+			
+			function getRandom(min, max) {
+			  min = Math.ceil(min);
+			  max = Math.floor(max);
+			  return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值 
+			}
+			
+			
+			
+			
+			
+			
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dom</title>
+    <style>
+        .box{margin: 0 auto; width: 200px; height: 200px; background-color: red;}
+    </style>
+</head>
+<body>  
+   
+<div class="box" draggable="true"></div>
+
+<script>
+	var box = document.querySelector(".box")
+	box.ondragstart =function(){    //刚开始拖动的时候触发
+		console.log("开始拖动了box")
+	}
+	box.ondrag =function(){   //正在拖动的时候触发
+		console.log("正在拖动box")
+	}
+	box.ondragend =function(){   //正在拖动的时候触发
+		console.log("结束拖动box")
+}
+</script>
+
+
+</body>
+</html>

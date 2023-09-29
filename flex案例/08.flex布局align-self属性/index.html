@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			div{ 
+				/*给父亲设置flex属性*/
+				width:80%;
+				background-color: black;
+				height: 400px;
+				display: flex;
+				margin: 0 auto;
+				/* align-items: flex-end;/*让子元素都沿着测轴往下排列 */ */
+			}
+			div span{
+				width: 100px; height: 100px; background-color: #00FFFF; margin: 10px;
+			}
+			div span:nth-child(2){
+				align-self: flex-end;  /*让第二个span标签  独立于其他的span   单独的沿侧轴下面摆放*/
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+		</div>
+	</body>
+</html>

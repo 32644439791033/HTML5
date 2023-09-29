@@ -1,0 +1,16 @@
+var name = '扬哥';
+var tel  = 18173299661;
+var qq   = 28849376;
+var birthday = '9月28';
+var sex  = '男';
+var jiguan  = '湖南湘潭';
+var banji= '19级电商X班';
+var like = '听歌,旅游';
+document.write("我的姓名： "+name+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(name)+'<br>');
+document.write("我的电话： "+tel+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(tel)+'<br>');
+document.write("我的QQ： "+qq+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(qq)+'<br>');
+document.write("我的生日： "+birthday+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(birthday)+'<br>');
+document.write("我的性别： "+sex+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(sex)+'<br>');
+document.write("我的籍贯： "+jiguan+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(jiguan)+'<br>');
+document.write("我所在班级： "+banji+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(banji)+'<br>');
+document.write("我的兴趣： "+like+"&nbsp;&nbsp;&nbsp;"+"数据类型： "+typeof(like)+'<br>');

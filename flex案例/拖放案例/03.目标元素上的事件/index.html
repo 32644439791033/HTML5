@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dom</title>
+    <style>
+        .box{margin: 0 auto; width: 200px; height: 200px; background-color: red;}
+		.container{margin: 0 auto; width: 500px; height: 500px; background-color: yellow; margin-top: 150px;}
+    </style>
+</head>
+<body>  
+   
+<div class="box" draggable="true"></div>
+<div class="container" draggable="true"></div>
+
+<script>
+	var container = document.querySelector(".container")
+    container.addEventListener('dragenter',function(){   //被拖拽元素进入目的地元素时触发
+		console.log("box进入了container范围里面触发")
+	})
+	
+	container.addEventListener('dragover',function(){   //被拖拽元素进入目的地元素时触发
+		console.log("box在container里面拖动触发")
+		event.preventDefault(); 
+	})
+
+	container.addEventListener('dragleave',function(){   //被拖拽元素离开目的地元素时触发
+		console.log("box离开container触发")
+	})
+	
+	container.addEventListener('drop',function(){   //被拖拽元素这目的地元素中被投放时触发    如果不在dragover里面设置 阻止事件  这个事件就不会发生
+		console.log("box在container里面送开鼠标时触发")
+	})
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+		//存储
+		 localStorage.setItem("username","张三") //  设置localStorage       key=>value的形式存储  键值对
+		 localStorage.name= "李四" 
+		 localStorage.tel= 18173299661 
+		 localStorage.person= JSON.stringify({ name:"王五",tel:18878789898})  //存放一个对象  返回的是  object Object       取出来的时候就不能使用了  所以我们要转换成字符串在寸JSON.stringify()
+	
+		//读取
+		
+		//alert(localStorage.getItem("username"))
+
+		 // alert(localStorage.name)
+		 // alert(localStorage.person)
+		 
+		 // console.log(localStorage.person) // JSON.parse()可以将字符串转换成对象
+		 
+		 //获取有多少条localStorage记录
+		console.log(localStorage.length)
+		 
+		//获取key值
+		console.log(localStorage.key(2))
+		
+		// 删除指定的 记录
+		localStorage.removeItem("tel")
+			
+		// 删除所有的记录
+		localStorage.clear()
+		
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

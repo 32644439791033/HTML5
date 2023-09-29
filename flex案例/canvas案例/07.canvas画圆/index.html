@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>07.canvas画圆</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				display: block;  //转换成块级元素
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 使用canvas只需要在html文件中 加入 canvas标签即可  <canvas></canvas>   canvas是双标签  行内元素 -->
+		<canvas id="" width="500" height="500"></canvas>
+		<script type="text/javascript">
+		
+			var canvas = document.querySelector("canvas")
+			var ctx = canvas.getContext('2d');
+			
+			// ctx.arc(250,150,100,0,Math.PI/6,true);	
+			// ctx.stroke();			// // 绘制一个圆形（xx坐标；yy坐标；r半径；sAngle开始角度；eAngle结束弧度；counterclockwise可选，规定应该逆时针还是顺时针绘图，默认false = 顺时针，true = 逆时针）            
+			ctx.beginPath()
+			ctx.arc(250,350,100,Math.PI/2,Math.PI/2*3,true);
+			//按照 顺时针的角度
+			
+			ctx.fillStyle = "gold"
+			ctx.fill();
+			ctx.lineWidth = 5
+			ctx.strokeStyle = "red"
+			ctx.stroke();
+			
+			
+			
+		</script>
+
+	</body>
+</html>

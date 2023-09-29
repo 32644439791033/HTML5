@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			div{ 
+				/*给父亲设置flex属性*/
+				width: 50%;
+				background-color: aqua;
+				height: 900px;
+				display: flex;
+				flex-direction: row;  /*默认的主轴是X轴    我们的元素是跟着主轴排列的   横着排列（从左到右）*/
+				justify-content: space-around;
+				/*
+				flex布局中 所有的子元素都是不换行的  如果装不开  会将的元素宽度变小   保持在一条线上不换行   
+				*/
+			   flex-wrap: wrap  /*设置换行*/
+	
+			}
+			span{ width: 200px; height: 200px; background-color: coral; }
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+	
+		</div>
+		
+	</body>
+</html>

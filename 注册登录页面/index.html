@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/suning.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="banner"></div>
+        <form name="myform" id="frm" action="request.html" method="get">
+        <div class="box">
+            <ul>
+                <li><div class="star">*</div><div class="inputbox">
+                    手机号码<input name="tel" placeholder="请输入手机号码"></div>
+                    <div class="notice" id = "tel_notice"></div>
+                </li>
+                <li><div class="star">*</div><div class="inputbox">
+                    短信验证码<input maxlength="6" name="msg" placeholder="请输入验证码" style="width: 300px;"> <button class="send-msg">获取短信验证码</button>
+                    <div class="notice" id = "msg_notice" style="margin-left:-15px;"></div>
+                </li>
+                <li><div class="star">*</div><div class="inputbox">
+                    设置密码<input name="pwd" placeholder="请输入密码" maxlength="10" type="password"></div>
+                    <div class="notice" id = "pwd_notice"></div>
+                </li>
+                <li><div class="star">*</div><div class="inputbox">
+                    企业名称<input name="cpname" placeholder="企业名称"></div>
+                    <div class="notice" id = "cpname_notice"></div>
+                    </li>
+                <li><div class="star"></div><div class="inputbox">
+                    社会信用代码<input name="code" placeholder="请输入社会信用代码"></div>
+                    <div class="notice" id = "code_notice"></div>
+                </li>
+            </ul>
+                <div class="xieyi"><input type="checkbox" name="xieyi" value="1">&nbsp;同意《苏宁会员章程》 《易付宝协议》 《苏宁隐私政策》《易付宝隐私政策》<br>及《苏宁广告联盟在线协议》
+                </div>
+             <div  id="xieyi_notice"></div>
+                <input type="submit" value="同意并注册" class="submit"id="submit" onclick="javascript:window.location.ueplace('request.html')">
+            </div>
+        </div></form>
+         <div class="showbox">
+              <div class="head_box">注册协议</div> 
+             <div class="body_box">
+            [审慎阅读]您在申请注册流程中点击同意前,应当认真阅读以下协议。请您务必审慎阅读、充分理解协
+            议中相关条款内容,其中包括:<br>
+            1.与您约定免除或限制责任的条款;<br> 
+            2.与您约定法律适用和管辖的条款;<br>
+            3.其他以粗体下划线标识的重要条款。<br>
+            如您对协议有任何疑问,可向平台客服咨询。<br>
+            [特别提示]当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后,即表示您已充分
+            阅读、理解并接受协议的全部内容。<br>
+            阅读协议的过程中,如果您不同意相关协议或其中任何条款约定,您应立即停止注册程序。<br>
+            《苏宁会员章程》<br>
+            《易付宝协议》<br>
+            《苏宁隐私政策》<br>
+            《易付宝隐私政策》<br>
+            《苏宁广告联盟在线协议》
+             </div> 
+            <input type="button" value="同意并继续" class="xieyi_btn">
+        </div>
+    </div>
+    <script src="js/suning.js"></script>
+</body>
+</html>

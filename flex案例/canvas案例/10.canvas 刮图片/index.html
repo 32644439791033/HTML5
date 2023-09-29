@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			canvas{
+				border: 1px black solid;
+				margin: 20px auto;
+				display: block;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas"  width="328" height="584"></cavas>
+	</body>
+	<script>
+	
+	    //按下鼠标 并滑动的时候  将遮住的从变透明
+	
+		var cav = document.getElementById('myCanvas');
+		var ctx = cav.getContext('2d');
+		
+		cav.style.backgroundImage = 'url(img/picbackground.jpg)';   //设置背景
+	
+			var oimg = new Image();
+				oimg.src = 'img/picfront.jpg';
+					
+			oimg.onload = function(){
+				ctx.drawImage(oimg,0,0);
+			}
+	
+		cav.onmousedown = function(){       //
+			ctx.beginPath()
+			cav.onmousemove = function(e){
+				ctx.globalCompositeOperation = 'destination-out';  //https://www.w3school.com.cn/tags/canvas_globalcompositeoperation.asp
+				ctx.lineWidth = 10;
+				ctx.lineTo(e.offsetX,e.offsetY);
+				ctx.stroke();
+			}
+			
+			cav.onmouseup = function(){
+				ctx.closePath();
+				cav.onmousemove = null;
+			}
+		}
+
+
+	
+	</script>
+</html>

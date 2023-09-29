@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>02.canvas画直线</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				display: block;  //转换成块级元素
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 使用canvas只需要在html文件中 加入 canvas标签即可  <canvas></canvas>   canvas是双标签  行内元素 -->
+		<canvas id="" width="500" height="500"></canvas>
+		
+		<script type="text/javascript">
+		// 画直线的步骤：
+		// 	1.获取画布  
+		// 	2.获取画布的绘画权限
+		// 	3.开始一条路径     （选择绘画工具 准备开始画画）
+		// 	4.确定起始点
+		// 	5.确定结束点
+		// 	6.着色
+		// 	7.结束路径 
+		
+			//1.获取画布 
+			 var canvas = document.querySelector("canvas")
+			
+			// 2.获取画布的绘画权限
+			var ctx = canvas.getContext('2d');
+
+			// 3.开始一条路径     （选择绘画工具 准备开始画画）
+			ctx.beginPath()
+			// 4.确定起始点
+			ctx.moveTo(100,100);
+			
+			// 5.确定结束点
+			ctx.lineTo(400,400);
+			ctx.lineTo(400,100);  //可以使用多个lineTo
+			ctx.lineTo(100,100);  //可以使用多个lineTo
+			// 6.着色
+			
+			ctx.stroke();
+			// 7.结束路径 
+		    ctx.closePath()
+			
+		</script>
+
+	</body>
+</html>

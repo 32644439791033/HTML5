@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>04.canvas画矩形</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				display: block;  //转换成块级元素
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 使用canvas只需要在html文件中 加入 canvas标签即可  <canvas></canvas>   canvas是双标签  行内元素 -->
+		<canvas id="" width="500" height="500"></canvas>
+		<script type="text/javascript">
+		//画一个  宽度为 200px的正方形           A起点坐标（100,100）    B点坐标（300,100）   C点坐标（300,300）  D点坐标（100,300）		
+		
+			var canvas = document.querySelector("canvas")
+			var ctx = canvas.getContext('2d');
+			drawLine(100,100,300,100,"red",5)
+			drawLine(300,100,300,300,"green",5)
+			drawLine(300,300,100,300,"yellow",5)
+			drawLine(100,300,100,100,"blue",5)
+			
+			
+			
+			
+			function drawLine(x1,y1,x2,y2,color,lineW){
+				
+				ctx.beginPath()
+				// 4.确定起始点
+				ctx.moveTo(x1,y1);
+				// 5.确定结束点
+				ctx.lineTo(x2,y2);
+				// 6.着色   (先设置好颜色和宽度   在去着色)
+				ctx.strokeStyle = color  //设置颜色为红色
+				ctx.lineWidth = lineW  //不用写单位了  他自带px
+				ctx.stroke();
+				// 7.结束路径 
+				ctx.closePath()
+				
+				
+				
+			}
+			
+			
+			
+
+		// 	ctx.beginPath()
+		// 	ctx.moveTo(100,100);
+		// 	ctx.lineTo(300,100);
+		// 	ctx.strokeStyle = "red"  //设置颜色为红色
+		// 	ctx.lineWidth = 3  //不用写单位了  他自带px
+		// 	ctx.stroke();
+		//     ctx.closePath()           //如果后面有 	ctx.beginPath()    则当前的这个ctx.closePath()   可以省略
+			
+			
+		// 	ctx.beginPath()
+		// 	ctx.moveTo(300,100);
+		// 	ctx.lineTo(300,300);
+		// 	ctx.strokeStyle = "yellow"  //设置颜色为红色
+		// 	ctx.lineWidth = 3  //不用写单位了  他自带px
+		// 	ctx.stroke();
+		// 	ctx.closePath()
+			
+			
+			
+		// 	ctx.beginPath()
+		// 	ctx.moveTo(300,300);
+		// 	ctx.lineTo(100,300);
+		// 	ctx.strokeStyle = "dodgerblue"  //设置颜色为红色
+		// 	ctx.lineWidth = 3  //不用写单位了  他自带px
+		// 	ctx.stroke();
+		// 	ctx.closePath()
+			
+		
+			
+		// 	ctx.beginPath()
+		// 	ctx.moveTo(100,300);
+		// 	ctx.lineTo(100,100);
+		// 	ctx.strokeStyle = "green"  //设置颜色为红色
+		// 	ctx.lineWidth = 3  //不用写单位了  他自带px
+		// 	ctx.stroke();
+		// 	ctx.closePath()
+			
+			
+			
+			// //函数封装            相同的操作和逻辑留下    不同的作为参数传递（开始坐标x   开始坐标y    终点坐标x1  终点坐标y1   颜色   宽度）
+			
+			// function drawLine(x,y,x1,y1,color,width){
+			// 	ctx.beginPath()
+			// 	ctx.moveTo(x,y);
+			// 	ctx.lineTo(x1,y1);
+			// 	ctx.strokeStyle = color  //设置颜色为红色
+			// 	ctx.lineWidth = width  //不用写单位了  他自带px
+			// 	ctx.stroke();
+			// 	ctx.closePath()
+			// }
+			
+			// // 进行函数调用
+			// drawLine(100,100,300,100,"red",3)
+			// drawLine(300,100,300,300,"yellow",3)
+			// drawLine(300,300,100,300,"green",3)
+			// drawLine(100,300,100,100,"dodgerblue",3)
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+
+	</body>
+</html>

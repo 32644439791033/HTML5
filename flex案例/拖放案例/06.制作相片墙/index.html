@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			html,body{
+				height: 100%;
+			}
+			.box{
+				position: relative;
+				height: 100%;
+				background: #ccc;
+			}
+			img{
+				position: absolute;
+				border: 20px solid white;
+				box-shadow: 0 0 1px 3px #666;  
+				top:200px;
+				left:500px;
+				animation: img 3s ease-in-out alternate infinite ;  
+				transform-origin: top left; 
+			}
+			@keyframes img{ 
+				from{ transform :rotate(45deg)}
+				to{transform :rotate(60deg)}
+			}
+		</style>
+		<script>
+		
+			 window.onload = function(){
+			 	var myDiv = document.querySelector(".box");
+				myDiv.ondragover = function(e){    //阻止事件默认 e.preventDefault();  
+					e.preventDefault();
+				};
+
+			 	myDiv.ondrop = function(e){  
+			 		e.preventDefault();   //阻止事件默认行为   拖动图片在浏览器上面的时候  浏览器会打开图片  所以要阻止事件默认行为
+			 	    var file = e.dataTransfer.files[0];   //获取图片信息    e.dataTransfer用于保存拖放过程中的数据   也包含了上传文件信息
+					console.log(e.dataTransfer.files[0])  //files获取到的文件信息保存在数组里面  所以需要用下标
+					var reader = new FileReader();  //  FileReader对象    用来把文件读入内存，并且读取文件中的数据。 通过构造函数创建一个 FileReader 对象。
+					reader.readAsDataURL(file);  //reader对象里面的readAsDataURL方法 可以用于读取文件 (将文件读取为一串Data URL字符串)    参数file是指定文件信息     
+					reader.onload = function(){     //onload  数据读取成功完成时触发
+						var img = new Image();  //创建一个图片对象  或者 var img = document.createElement("img");
+						img.src= reader.result;  //上传图片的地址放在了 result属性里面
+						img.style.top = (e.clientY) + "px";  //获取鼠标的Y坐标   赋值到 图片的 top值上面
+						img.style.left = (e.clientX) + "px"; //获取鼠标的X坐标   赋值到 图片的 left值上面
+						img.style.width = getRandom(20,30)+"%"
+						e.target.appendChild(img);  //事件对象绑定的元素
+					
+					}
+				}
+			}
+
+			function getRandom(min, max) {
+			  min = Math.ceil(min);
+			  max = Math.floor(max);
+			  return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值 
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/2.jpg" >
+		</div>
+	</body>
+</html>

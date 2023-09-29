@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			canvas{ border: 1px solid;}
+		</style>
+		<script>
+	
+		
+		window.onload =function(){
+			var canvas = document.querySelector("canvas")
+			var ctx = canvas.getContext('2d');
+			var i = 1 ;  //往右边在移动样速
+			var k =3 ;//往下在移动速度
+			var x = 50
+			var y =50
+			var r = 20
+			var w = 400
+			var h = 400
+			
+			var time= setInterval(function(){
+				ctx.clearRect(0,0,w,h)
+				if(x+r>=w || x<=r ){
+					i = -i
+					// clearInterval(time)
+					
+				}
+				x = x + i;
+				if(y+r>=h  || y<=r){
+					k=-k
+				}
+
+	            y = y +k
+				drawArc(x,y,r,"green")
+				
+			},10)
+			
+			
+			function drawArc(x,y,r,color){
+				ctx.beginPath()
+				ctx.arc(x,y,r,0,Math.PI*2,true);
+				ctx.fillStyle = color
+				ctx.fill()
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			// var s=1;  //每次移动1
+			// // setInterval(function(){
+			// // 	 // ctx.clearRect(0,0,800,800);
+			// // 	 ctx.beginPath()
+			// // 	 ctx.arc(100+s,100,30,0,Math.PI*2,true);
+			// // 	 ctx.fillStyle = "green";
+			// // 	 ctx.fill(); 
+			// // 	 s++;
+			// // },10)
+			
+			
+			// setInterval(function(){
+			// 	ctx.clearRect(0,0,800,800)
+			// 	drawArc(100+s,100,30,"red")
+			// 	s++;
+			// },10)
+			
+			// function drawArc(x,y,r,color){
+			// 	ctx.beginPath()
+			// 	ctx.arc(x,y,r,0,Math.PI*2,true);
+			// 	ctx.fillStyle = color;
+			// 	ctx.fill(); 
+				
+			// }
+			
+		}
+		</script>
+	</head>
+	<body>
+		<canvas id="" width="400" height="400"></canvas>
+	</body>
+</html>

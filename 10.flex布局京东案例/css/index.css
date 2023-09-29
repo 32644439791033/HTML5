@@ -1,0 +1,89 @@
+*{ margin: 0; padding: 0;}
+a{ text-decoration: none;color: #333;}
+body{
+	max-width: 540px;
+	min-width: 320px;
+	margin: 0 auto;
+	font-size: 14px;
+	overflow-x: hidden; /* 水平滚动条隐藏 */
+	color: #333;
+}
+.search{
+	width: 100%;
+	top: 0;
+	left:50%;
+	height: 40px;
+	background-color: red;
+	position: fixed;  /*固定的定位的宽度跟父亲没关系  他是已屏幕宽度为准 所以必须设置宽度*/
+    max-width: 540px;
+    min-width: 320px;
+	transform: translate(-50%); /*往左边移动自身的50%*/
+	display: flex;
+	justify-content: space-around ;
+}
+.search_l{
+	margin: 10px 0 0 15px;
+	width: 20px;
+	height: 18px;
+	background: url(../img/inco1.png) no-repeat bottom;
+}
+.search_m{
+	flex:1 ; /*占满剩余空间*/
+	background: #fff;
+	border-radius:2em;
+	margin: 5px 10px;
+	height: 30px;
+	line-height:30px;
+	display: flex;
+	align-items: center;
+	
+}
+.search_r{
+   width: 30px;
+   height: 18px;
+   margin: 10px 15px 0 0;
+   color: #fff;
+   
+}
+.logo{
+   width:24px;
+   height: 18px;
+   margin: 0 10px;
+}
+.searchbg{
+	width: 20px;
+	height: 15px;
+	background: url(../img/jd-sprites.png) no-repeat -80px 0;
+	background-size: 200px;
+	margin: 0 10px;
+	
+}
+.banner{
+	width: 100%;
+	padding-top: 50px;
+	text-align: center;
+}
+.banner img{
+	width: 100%;
+	border-radius: 2em;
+	width: 96%;
+}
+.nav{display: flex; list-style: none; flex-wrap: wrap; width: 100%; }
+.nav li{flex:20%;text-align: center; margin: 5px 0;} /* 占父盒子的20 */
+.nav li a img{ width: 60%;}
+.qianggou{width:95%; margin:30px 0 0  15px; font-size: 16px;}
+.qianggou input{ width:22px; height:20px; border: none; background-color: #FF0000; color:#FFF;}
+.qianggou span{font-size: 12px; float: right; background: url(../img/arrow_rt_2ccb8cd5.png) no-repeat right; background-size: 15px; padding-right: 20px;}
+.qianggou ul{ display: flex; justify-content: space-between; list-style: none; margin-top: 10px;}
+.qianggou ul li { flex: 1; text-align: center; }
+.qianggou ul li img{ width: 100%;}
+.qianggou ul li p{ color: #FF0000;}
+.goods{ width: 100%; display: flex; flex-wrap: wrap; list-style: none; align-content:space-between; margin-top: 15px; padding-bottom: 70px;}
+.goods li{ flex:50%; text-align: center; margin-top: 10px;}
+.goods li img { width: 95%; border-radius:10px;}
+.goods li p{ width: 90%; text-align: left; margin-left: 10px; }
+.goods li .price{ color: red; font-size: 20px; font-weight: bolder;}
+.bottomnav{ display: flex; list-style: none; position: fixed; bottom: 0; background-color: #eae7e7;  max-width: 540px;
+    min-width: 320px; }
+.bottomnav li{ flex: 1; text-align: center;}
+.bottomnav li img{ width: 80%;}

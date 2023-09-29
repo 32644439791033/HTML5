@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>速度曲线</title>
+		<style type="text/css">
+			@keyframes move{
+				from{}
+				to{width: 160px;}
+			}
+			
+			div{
+				width: 0px;
+				height: 20px;
+				font-size: 20px;
+				background-color: aqua;
+				overflow: hidden;
+			/* 	animation-name: move;
+				animation-duration: 3s;
+				animation-fill-mode: forwards;
+				animation-timing-function: steps(8);
+				 */
+				
+				animation: move 3s steps(8) 2  forwards;
+
+				
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			我在湖南软件等你
+		</div>
+	</body>
+</html>

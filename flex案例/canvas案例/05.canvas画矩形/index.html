@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>05.canvas画矩形</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				display: block;  //转换成块级元素
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 使用canvas只需要在html文件中 加入 canvas标签即可  <canvas></canvas>   canvas是双标签  行内元素 -->
+		<canvas id="" width="500" height="500"></canvas>
+		<script type="text/javascript">
+		
+	// 		ctx.rect(x,y,w,h);	//绘制一个矩形     矩形里面是没有填充颜色的	// 		（xx坐标；yy坐标；w宽度；h高度）	// 		ctx.stroke();
+	
+			var canvas = document.querySelector("canvas")
+			var ctx = canvas.getContext('2d');
+			ctx.beginPath()
+			ctx.rect(100,20,300,100);	//绘制一个空心矩形  
+			ctx.strokeStyle="aqua"   //边框颜色 
+			ctx.lineWidth = 5;
+			ctx.stroke();
+			
+	
+		    ctx.beginPath()
+			ctx.fillStyle="yellow"  //设置填充颜色
+			ctx.fillRect(100,200,300,100);	//绘制一个实心矩形  填充颜色必须先设置好   在去画画
+			
+
+		    ctx.beginPath()  //绘制一个实心矩形有边的  先填充 在去描边
+			ctx.rect(100,360,300,100);	
+			ctx.fillStyle="yellow"  
+			ctx.fill();
+			ctx.strokeStyle="aqua"
+			ctx.lineWidth = 10;
+			ctx.stroke();
+				
+		
+		</script>
+
+	</body>
+</html>

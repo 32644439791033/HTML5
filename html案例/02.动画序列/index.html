@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>序列</title>
+		<style type="text/css">
+		  /* 动画序列
+		   1.可以做多个状态的变化
+		   2.里面的百分比要是整数
+		   3.里面的百分比 其实就是时间的划分
+		   */
+		  @keyframes move{
+		  	0%{    /* 开始状态 */    /*可以省略*/
+				transform: translateX(0，0);
+			}
+			25%{    
+				transform: translate(1000px,0);
+			}
+			50%{    
+				transform: translate(1000px,500px);
+			}
+		  	75%{ 
+				transform: translate(0px,500px);
+			}
+			100%{  /* 结束状态 */
+				transform: translate(0,0);
+			}
+		  }
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: aqua;
+				/* 调用动画 */
+				animation-name: move;    /*调用的动画名称*/
+				animation-duration: 10s;  /*动画的持续时间*/
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">	
+		</div>
+	</body>
+</html>

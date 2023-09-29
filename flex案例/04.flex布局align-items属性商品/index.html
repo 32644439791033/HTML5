@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			div{ 
+				/*给父亲设置flex属性*/
+				width: 100%;
+				background-color: aqua;
+				height: 900px;
+				display: flex;
+				flex-direction: row;  /*默认的主轴是X轴    我们的元素是跟着主轴排列的   横着排列（从左到右）*/
+				justify-content: center;  /*设置主轴居中对齐*/
+				align-items: center;  /*设置侧轴居中对齐*/
+				align-items:  flex-start;  /*设置侧轴上面对齐*/
+				align-items: flex-end;  /*设置侧轴下面对齐*/
+				align-items: stretch;  /*拉升高度  拉得跟父元素一样    但是不要写高度*/
+	
+			}
+			span{ width: 200px; height: 200px; background-color: coral; margin: 0 10px; }
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+		
+	
+		</div>
+		
+	</body>
+</html>

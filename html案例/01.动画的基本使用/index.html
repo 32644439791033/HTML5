@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>打开页面让盒子从左到右边</title>
+		<style type="text/css">
+		  /* 定义动画 */
+		  @keyframes move{
+		  	0%{    /* 开始状态 */
+				transform: translateX(0px);
+			}
+		  	100%{  /* 结束状态 */
+				transform: translateX(1000px);
+			}
+		  }
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: aqua;
+				/* 调用动画 */
+				animation-name: move;    /*调用的动画名称*/
+				animation-duration: 3s;  /*动画的持续时间*/
+				animation-timing-function: ease;/*动画的运动曲线*/
+				animation-delay: 1s;/*动画延迟开始*/
+				animation-iteration-count:infinite;/*动画执行次数    infinite无限循环*/
+				animation-direction:alternate ;/* 是否反反向播放 默认的是normal 如果需要反方向就用alternate*/
+				animation-fill-mode:backwards  ;/*动画完成后的状态 默认的是backwards回到起始状态  如果需要停留在结束状态用forwards*/
+			   /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+				/* animation:  move  3s          ease         5s      infinite    alternate   backwards */
+			}
+			div:hover{  /*鼠标滑动在上面 暂停动画    鼠标滑走了就继续动画*/
+				animation-play-state:paused ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">	
+		</div>
+	</body>
+</html>
