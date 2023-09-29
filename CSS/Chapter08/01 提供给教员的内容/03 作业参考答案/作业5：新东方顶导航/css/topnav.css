@@ -1,0 +1,77 @@
+body {
+	margin:0;
+	font:12px Arial, Helvetica, sans-serif, "宋体";
+}
+a {
+	text-decoration:none;
+	color:#656565;
+}
+a:hover {
+	text-decoration:underline;
+}
+ul {
+	margin:0;
+	padding:0;
+}
+li {
+	list-style:none;
+}
+#wrap {
+	width:600px;
+	position:relative;
+}
+#head {
+	width:100%;
+	background:url(../image/top_bg.gif) 0 0 repeat-x;
+	height:27px;
+	overflow:hidden;
+}
+.logo {
+	background:url(../image/logo.gif) 10px 0 no-repeat;
+	width:100px;
+	height:27px;
+	float:left;
+}
+.topnav {
+	float:right;
+}
+.topnav ul {
+	margin:0;
+	padding:0;
+}
+.topnav li {
+	float:left;
+	list-style:none;
+	border-right:1px solid #d3d3d3;
+	padding:0 15px;
+	margin-top:6px;
+}
+.topnav li.select_item {
+	background:url(../image/open_icon.gif) right 3px no-repeat;
+	border:none;
+}
+.submenu {
+	position:absolute;
+	top:20px;
+	right:30px;
+	padding:5px 10px;
+	border:1px solid #bfbfbf;
+	width:200px;
+	background-color:#fff;
+}
+.submenu ul {
+	border-bottom:1px solid #e8e8e8;
+	overflow:hidden;
+	padding:8px 0;
+}
+.submenu ul.last {
+	border-bottom:none;
+}
+.submenu li {
+	float:left;
+	margin:0 8px;
+	line-height:22px;
+}
+.submenu li a {
+	color:#878787;
+}

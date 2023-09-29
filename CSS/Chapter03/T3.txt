@@ -1,0 +1,61 @@
+一.表单：用来提交信息
+  1.<form method="get|post" action="提交地址"></form>
+      get:显示提交方式，不安全，提交信息在地址栏上显示
+      post:隐式提交方式，安全，信息不会在地址栏上显示
+  2.表单元素
+	1.文本框：<input type="text" />
+	2.密码框：<input type="password" />
+	3.按钮：普通按钮: <input type="button" />
+		提交按钮：<input type="submit" />
+		重置按钮：<input type="reset" />
+		图片按钮：<input type="image" src="路径" />
+	7.单选按钮：<input type="radio" name="" /> (name用来设置选择其中某一个单选按钮)
+	8.复选框：<input type="checkbox" checked="checked" />(checked:设置默认选项)
+	9.文件域：<input type="file" />
+	10.下拉列表框：<select>(selected设置默认选项)
+			<option selected="selected">内容</option>
+	      	      </select>
+	11.多行文本域：<textarea cols="宽" rows="高">内容</textarea>
+	12.隐藏域：<input type="hidden" value="" />
+        13.邮箱:<input type="email"  name="email"/>
+        14.网址:<input type="url"  name="userUrl"/>
+        15:数字:<input type="number"  name="num" min="0" max="100" step="10"/>
+         step:数字间隔
+        16:滑块:<input type="range"  name="range1" min="0" max="10" step="2"/>
+        17：搜索的关键词:<input type="search"  name="sousuo"/>
+
+
+  3.文本标签：
+	<label for="标识名"></label>
+	注意：标识名要和标签中的id名相同
+
+
+二.隐藏，只读和禁用
+  1.隐藏（hidden）：标签隐藏 页面上看不到效果
+  1.只读(readonly)：颜色不会发生变化，只能读取，不能操作
+  2.禁用(disabled)：颜色变灰色，无法使用
+三.提示，必填，验证
+（提示）placeholder：input类型的文本框提供一种提示（hint）
+（必填）required：内容不能为空，
+（验证）pattern：用户输入的内容必须符合正则表达式所指的规则，否则就不能提交表单
+
+
+语义化：
+   1.作用：结构合理代码简单
+	   便于浏览器识别
+	   便于搜索引擎搜索
+	   符合W3C规范
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

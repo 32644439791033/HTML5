@@ -1,0 +1,54 @@
+Html全称超文本标记语言
+
+w3c全称万维网联盟
+
+常见成对的标签有：
+根标签:<html></html>
+头部标签:<head></head>
+标题标签:<title></title>
+主体标签:<body></body>
+标题标签：<h1></h1>
+<h6></h6>
+段落标签：<p></p>
+加粗：<strong>…</strong>
+斜体：<em>…</em>
+
+
+自己可以结束的标签：
+换行：<br/>
+水平线标签：<hr/>
+配置标签配置编码：<meta charset="utf-8" />
+
+告诉浏览器使用什么规范：
+<!DOCTYPE html>
+
+
+特殊符号
+空格：&nbsp;
+
+图像标签：
+<img src="path" alt="text" title="text"  width="x"  height="y" />
+src：图像地址
+alt：如果图像加载不了显示的文字
+title：鼠标悬停提示文字
+width:图像宽度
+height：图像高度
+
+链接标签：
+<a href="path" target="目标窗口位置">链接文本或图像</a>
+href:链接路径
+target:链接在哪个窗口打开
+常用值：_self、blank
+
+常见的块元素：
+无论内容多少，该元素独占一行
+div ，p ，ul , li ,h1-h6…
+
+
+常见的行内元素：
+内容撑开宽度，左右都是行内元素的可以排在一行
+a ,strong ,em …
+
+
+
+

@@ -1,0 +1,87 @@
+一.<span></span>范围标签
+
+二.字体样式
+  font-family：类型
+  font-size:字体大小
+  font-style:字体风格：倾斜
+  font-weight:字体粗细
+  font:字体缩写，顺序不能变： font:风格 粗细 大小 类型;
+
+三.文本样式
+  color:文本颜色
+  text-align:水平对齐方式，left:左 center:中 right:右
+  text-indent:首行缩进（em）
+  line-height：行高，作用：垂直居中或设置行距
+  text-decoration:文本修饰，加下划线underline
+			      中划线line-through
+			      上划线overline
+			      不加线none
+
+  vertical-align：垂直对齐方式，居上top
+			   	居中middle
+				居下bottom
+文本阴影：text-shadow : color  x-offset  y-offset  blur-radius;
+1.阴影颜色   
+2.X轴位移，用来指定阴影水平位移量     
+3.Y轴位移，用来指定阴影垂直位移量 
+4.阴影模糊半径，代表阴影向外模糊的模糊范围
+
+四.超链接伪类样式
+	a:link  超链接未访问
+	a:visited 超链接访问后
+	a:hover 超链接悬浮
+	a:active 超链接单击未释放
+
+六.背景样式
+  1.background-color：背景颜色
+  2.background-image: 背景图片
+  3.background-repeat:平铺方式
+			不平铺：no-repeat
+			水平平铺：repeat-x
+			垂直平铺：repeat-y
+			平铺：repeat
+  4.background-position:背景位移
+	例：background-position：30px 50px;向右向下
+	第一个数：水平方向的移动，负的是向左移
+				  正的是向右移
+	第二个数：垂直方向的移动，负的是向上移
+				  正的是向下移
+
+
+   5.background:颜色 图片 位移 平铺;
+
+   6.background-size:背景尺寸
+     auto：默认值，使用背景图片保持原样
+     percentage：当使用百分值时，不是相对于背景的尺寸大小来计算的，而是相对于元素宽度来计算的
+     cover：整个背景图片放大填充了整个元素
+     contain：让背景图片保持本身的宽高比例，将背景图片缩放到宽度或者高度正好适应所定义背景的区域
+
+
+七.列表样式
+  1.list-style-type:列表的图标类型
+		none:没有图标
+		disc:实心圆
+		circle：空心圆
+		square：正方形
+  2.list-style-position:列表图标的位置
+		inside:在li里面
+		outside:在li外面
+   例：list-style-position: outside;
+  3.list-style-image:列表显示的图片,每个列表的图片都一致
+   例： list-style-image: url("../images/arrow-icon.gif");
+    
+  4.list-style:缩写：先type ->  postion ->image
+	例：list-style:none inside url(路径);
+		
+八：线形渐变：
+ background: linear-gradient(to left,red,yellow,blue,...);渐变方向  渐变颜色1 渐变颜色2 ...
+ background: -webkit-linear-gradient(to left,red,yellow,blue,...);//不同的浏览器加上不同的兼容
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+
+p {
+    font-size: 14px;
+}
+
+h2{
+    font-size: 18px;
+}
+h2:nth-of-type(1){
+    color: red;
+}
+h2:nth-of-type(2){
+    color: green;
+}
+
+
+.pic img{
+    width: 300px;
+    height: 200px;
+}
+
+p:last-of-type{
+    color: blue;
+}
+
+ul li a{
+    font-size: 14px;
+    color: #640000;
+}

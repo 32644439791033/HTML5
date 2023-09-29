@@ -1,0 +1,45 @@
+
+#dress {
+    width: 320px;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 16px;
+    text-indent: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+li{
+    list-style: none;
+}
+.dress01 {
+    background: url(../image/dress01.png) 0px 0px no-repeat;
+}
+
+.dress02 {
+    background: url(../image/dress02.png) 0px 0px no-repeat;
+}
+
+.dress03 {
+    background: url(../image/dress03.png) 0px 0px no-repeat;
+}
+
+.dress04 {
+    background: url(../image/dress04.png) 0px 0px no-repeat;
+}
+
+.dress05 {
+    background: url(../image/dress05.png) 0px 0px no-repeat;
+}
+
+.dressList a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dressList a:hover {
+    color: #F60;
+    text-decoration: underline;
+}

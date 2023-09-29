@@ -1,0 +1,32 @@
+ul, li {
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+#content {
+	width:331px;
+	overflow:hidden;
+	padding:5px;
+	font-size:12px;
+	line-height:25px;
+	border:1px #999 solid;
+}
+#content ul {
+	position:relative;
+}
+.tipBg, .tipText {
+	position:absolute;
+	width:331px;
+	height:25px;
+	top:100px;
+}
+.tipText {
+	color:#FFF;
+	text-align:center;
+	/*z-index:1;*/
+}
+.tipBg {
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}

@@ -1,0 +1,16 @@
+
+h1 {
+    font-size: 18px;
+    line-height: 40px;
+    color: #9c2f06;
+}
+
+p {
+    line-height: 25px;
+    font-size: 12px;
+    color: #9c2f06;
+}
+
+p img {
+    vertical-align: middle;
+}

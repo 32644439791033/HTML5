@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .box img {
+            width: 100%;
+        }
+        .rightFixed{
+            position: fixed;
+            right: 0px;
+            top: 350px;
+        }
+        .navList {
+            position: relative;
+            margin-bottom: 4px;
+        }
+
+        .navList a {
+            width: 36px;
+            height: 36px;
+            display: block;
+            line-height: 36px;
+            background: #414141;
+            border-radius: 4px 0 0 4px;
+            position: relative;
+        }
+        .navList span {
+            position: absolute;
+            top: 0;
+
+            background: #414141;
+            width: 50px;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 20px;
+            font-size: 12px;
+            color: #FFFFFF;
+            border-radius: 4px 0 0 4px;
+            opacity: 0;
+        }
+
+        .navList .a1 {
+            background: #414141 url("images/toolbar_05.png") center no-repeat;
+        }
+        .navList .a2 {
+            background: #414141 url("images/toolbar_10.png") center no-repeat;
+        }
+        .navList .a3 {
+            background: #414141 url("images/toolbar_15.png") center no-repeat;
+        }
+        .navList .a4 {
+            background: #414141 url("images/toolbar_19.png") center no-repeat;
+        }
+
+
+        .navList:hover span {
+            background: #b81a15;
+            /*使用动画*/
+            animation: spread 0.5s linear both;
+        }
+        .navList:hover a {
+            background-color: #b81a15;
+            border-radius: 0;
+        }
+
+        /*创建动画*/
+        @keyframes spread {
+            0% {
+                opacity: 0;
+                left: 0px;
+            }
+            33% {
+                opacity: 05;
+                left: -30px;
+            }
+            66% {
+                opacity: 0.75;
+                left: -60px;
+            }
+            100% {
+                opacity: 1;
+                left: -90px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="images/img.bmp" alt=""/>
+    <ul class="rightFixed">
+        <li class="navList">
+            <a class="a1" href="#"></a>
+            <span>购物车</span>
+        </li>
+        <li class="navList">
+            <a class="a2" href="#"></a>
+            <span>我的关注</span>
+        </li>
+        <li class="navList">
+            <a class="a3"  href="#"></a>
+            <span>我的足迹</span>
+        </li>
+        <li class="navList">
+            <a  class="a4"  href="#"></a>
+            <span>我的消息</span>
+        </li>
+
+    </ul>
+</div>
+</body>
+</html>

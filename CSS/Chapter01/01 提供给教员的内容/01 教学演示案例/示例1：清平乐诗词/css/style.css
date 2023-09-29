@@ -1,0 +1,18 @@
+ body{
+	background:url("../images/liqingzhao.jpg") no-repeat; 
+	padding-left:230px; 
+ }
+  hr{
+	width:80%;
+	text-align:left;
+  }
+ h1,p{
+	font-family:"隶书";
+	color:#fff;
+ }
+ p{
+	font-size:20px; 
+ }
+ strong{
+	color:blue;
+ }

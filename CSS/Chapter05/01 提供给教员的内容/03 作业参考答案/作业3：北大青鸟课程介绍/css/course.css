@@ -1,0 +1,50 @@
+
+#android {
+	width:600px;
+	background-color:#eeeeee;
+	background: linear-gradient(to bottom,#EcEcEc,#FFFFED);
+}
+#android span {
+	color:#ffffff;
+}
+.course {
+	line-height:30px;
+	color:#5c9815;
+}
+.course span:nth-of-type(1) {
+	background-color:#005952;
+}
+.course span:nth-of-type(2) {
+	background-color:#007236;
+}
+.course span:nth-of-type(3) {
+	background-color:#008bbf;
+}
+.course span:nth-of-type(4) {
+	background-color:#0066b3;
+}
+.course span:nth-of-type(5){
+	background-color:#002561;
+}
+.design {
+	line-height:30px;
+	color:#f26522;
+}
+.design span:nth-of-type(1) {
+	background-color:#f36f21;
+}
+.design span:nth-of-type(2) {
+	background-color:#bb131a;
+}
+.design span:nth-of-type(3){
+	background-color:#d73765;
+}
+.design span:nth-of-type(4) {
+	background-color:#a70532;
+}
+.design span:nth-of-type(5) {
+	background-color:#553171;
+}
+.design span:nth-of-type(6){
+	background-color:#4f1268;
+}

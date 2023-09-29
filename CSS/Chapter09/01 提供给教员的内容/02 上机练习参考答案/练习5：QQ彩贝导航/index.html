@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>QQ彩贝导航</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 20px 0 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .clear:after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        header{
+            height: 70px;
+            line-height: 70px;
+            background: linear-gradient(to bottom, #FFFFFF, rgba(204, 204, 204, 0.4));
+        }
+        .topLeft{
+            float: left;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+        /*-------------------------中间导航条----------------------------------*/
+        .topCenter{
+            float: left;
+            margin-left: 60px;
+            font-size: 20px;
+            position: relative;
+        }
+        .topCenter li{
+            float: left;
+
+        }
+        .topCenter li a{
+            margin: 0 10px;
+            color: #000033;
+        }
+        .topCenter li a:hover{
+            color: #dd140f;
+        }
+        /*赚积分图片*/
+        .icon1{
+            position: absolute;
+            top: 0px;
+            width: 40px;
+            height: 20px;
+            background: url("images/header_03.png") 0 0 no-repeat;
+        }
+        /*花积分图片*/
+        .icon2{
+            position: absolute;
+            top: 0px;
+            width: 40px;
+            height: 25px;
+            background: url("images/header_07.png") 0 0 no-repeat;
+        }
+
+        /*创建动画（赚积分上的动画）*/
+        @keyframes spread {
+            0% {width:0;}
+            33% {width:23px;}
+            66% {width:46px;}
+            100% {width:69px;}
+        }
+        @-webkit-keyframes spread {
+            0% {width:0;}
+            33% {width:23px;}
+            66% {width:46px;}
+            100% {width:69px;}
+        }
+        @-moz-keyframes spread {
+            0% {width:0;}
+            33% {width:23px;}
+            66% {width:46px;}
+            100% {width:69px;}
+        }
+        @-o-keyframes spread {
+            0% {width:0;}
+            33% {width:23px;}
+            66% {width:46px;}
+            100% {width:69px;}
+        }
+        /*使用动画*/
+        /*鼠标移入赚的图片上变为赚积分的图片，并且宽度由小变大产生动画*/
+        .topCenter li a:hover .icon1 {
+            animation:spread 0.3s linear both;
+            -webkit-animation:spread 0.3s linear both;
+            -moz-animation:spread 0.3s linear both;
+            -o-animation:spread 0.3s linear both;
+            background: url("images/header_05.png") 0 0 no-repeat;
+        }
+
+        .topCenter li a:hover .icon2 {
+            animation:spread 0.3s linear both;
+            -webkit-animation:spread 0.3s linear both;
+            -moz-animation:spread 0.3s linear both;
+            -o-animation:spread 0.3s linear both;
+            background: url("images/header_09.png") 0 0 no-repeat;
+        }
+        /*-------------------------右边过渡动画----------------------------------*/
+        .topRight{
+            float: right;
+            margin-right: 120px;
+        }
+        .topRight a{
+            width:24px;
+            height:24px;
+            overflow:hidden;
+            margin-left:14px;
+            float:left;
+            margin-top:20px;
+            /*图片移动的动画*/
+            transition:all 0.3s linear;
+            -webkit-transition:all 0.3s linear;
+            -moz-transition:all 0.3s linear;
+            -o-transition:all 0.3s linear;
+
+        }
+        /*给每张图片设置背景*/
+        .topRight a:nth-of-type(1){
+             background: url("images/iconsB_11.gif") 0 0 no-repeat;
+         }
+        .topRight a:nth-of-type(2){
+            background: url("images/iconsB_12.gif") 0 0 no-repeat;
+        }
+        .topRight a:nth-of-type(3){
+            background: url("images/iconsB_13.png") 0 0 no-repeat;
+        }
+        /*鼠标移入图片旋转360度*/
+        .topRight a:nth-of-type(1):hover,
+        .topRight a:nth-of-type(2):hover,
+        .topRight a:nth-of-type(3):hover{
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <header class="clear">
+        <div class="topLeft">
+            <h1><a href="#"><img src="images/logo_170x46.png" alt=""/></a></h1>
+        </div>
+        <nav class="topCenter">
+            <ul class="clear">
+                <li>
+                    <a href="#">
+                        <span class="icon1"></span>
+                        返回商城
+                    </a>|
+                </li>
+                <li>
+                    <a href="#">商旅频道</a>|
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon2"></span>
+                        积分商城
+                    </a>|
+                </li>
+                <li><a href="#">商旅频道</a>|
+                </li>
+                <li>
+                    <a href="#">了解彩贝</a>|
+                </li>
+                <li>
+                    <a href="#" >彩贝活动</a>|
+                </li>
+                <li>
+                    <a href="#" >个人中心</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="topRight">
+            <a href="#" ></a>
+            <a href="#" ></a>
+            <a href="#" ></a>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>样式引入优先级问题</title>
+    <!--外部样式-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--内部样式-->
+    <style>
+        h1{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red">北京欢迎你</h1>  <!--行内样式-->
+    <p>北京欢迎你，有梦想谁都了不起！</p>
+    <p>有勇气就会有奇迹。</p>
+    <p>北京欢迎你，为你开天辟地</p>
+    <p>流动中的魅力充满朝气。</p>
+</body>
+</html>

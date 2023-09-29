@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transition-property的使用</title>
+    <style>
+        div{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            /*指定动画过渡的CSS属性 过渡时间 过渡动画 延迟时间*/
+            transition:  background-color 2s ease-in-out 3s;
+            -moz-transition:  background-color 2s ease-in-out 3s;
+            -webkit-transition:  background-color 2s ease-in-out 3s;
+            -o-transition:  background-color 2s ease-in-out 3s;
+        }
+        div:hover{
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

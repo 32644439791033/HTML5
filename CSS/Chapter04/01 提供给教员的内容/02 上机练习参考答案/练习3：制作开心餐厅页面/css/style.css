@@ -1,0 +1,26 @@
+/*层次选择器*/
+
+p{
+    font-size: 14px;
+}
+/*body后代h2字体16px*/
+body h2{
+    font-size: 16px;
+}
+/*第一个h2颜色变为红色*/
+.firstH2{
+color: red;
+}
+/*第一个h2后面的通用兄弟元素h2变为蓝色*/
+.firstH2 ~ h2{
+    color: blue;
+}
+
+/*img:first-child{*/
+    /*width: 887px;*/
+    /*height: 439px;*/
+/*}*/
+
+/*img:nth-of-type(2){*/
+    /*border: 1px solid red;*/
+/*}*/

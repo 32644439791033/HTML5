@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div img:nth-child(even){
+            width: 200px;
+        }
+        div img:nth-child(odd){
+            width:300px;
+        }
+        .box{
+            width: 960px;
+            margin: 200px auto;
+            position: relative;
+        }
+        .box img{
+            border: 1px solid #ddd;
+            padding: 10px;
+            position: absolute;
+            background: #fff;
+            z-index: 1;
+            /*过渡动画*/
+            transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+        }
+        #box img:hover{
+           z-index: 2;    /*提高层级 */
+            box-shadow: 5px 5px 5px #ddd;
+            transform: rotate(0deg) scale(1.5);
+        }
+        .box img:nth-child(1){
+            top: 0px;
+            left: 300px;
+            transform: rotate(-15deg);
+        }
+        .box img:nth-child(2) {
+            top:-50px;
+            left: 600px;
+            transform: rotate(-20deg);
+        }
+
+        .box img:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            transform: rotate(15deg);
+        }
+
+        .box img:nth-child(4) {
+            bottom: 0;
+            left: 400px;
+            transform: rotate(-20deg);
+        }
+
+        .box img:nth-child(5) {
+            bottom: 0;
+            left: 0;
+            transform: rotate(-30deg);
+        }
+
+        .box img:nth-child(6) {
+            top: 0;
+            left: 0;
+            transform: rotate(20deg);
+        }
+
+        .box img:nth-child(7) {
+            top: 0;
+            left: 700px;
+            transform: rotate(20deg);
+        }
+
+        .box img:nth-child(8) {
+            bottom: -20px;
+            right: 500px;
+            transform: rotate(30deg);
+        }
+
+        .box img:nth-child(9) {
+            top: 90px;
+            left: 550px;
+            transform: rotate(15deg);
+        }
+
+        .box img:nth-child(10) {
+            left: 180px;
+            top: 20px;
+            transform: rotate(-10deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <img src="image/1.jpg" alt=""/>
+        <img src="image/2.jpg" alt=""/>
+        <img src="image/3.jpg" alt=""/>
+        <img src="image/4.jpg" alt=""/>
+        <img src="image/5.jpg" alt=""/>
+        <img src="image/6.jpg" alt=""/>
+        <img src="image/7.jpg" alt=""/>
+        <img src="image/8.jpg" alt=""/>
+        <img src="image/9.jpg" alt=""/>
+        <img src="image/10.jpg" alt=""/>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+CSS3变形是一些效果的集合
+如平移、旋转、缩放、倾斜效果
+
+2D位移之沿着x轴移动100个像素
+transform:translate(100px,0)
+或
+transform:translateX(100px)
+
+
+只设置Y轴的位移：
+transform:translate(0,100px)
+或
+transform:translateY(100px)
+
+
+设置X轴的缩放 2倍
+transform:scaleX(2)
+或
+transform:scale(2,0)
+
+只设置Y轴的缩放
+transform:scale(0,2)
+或
+transform:scaleY(2）
+
+设置X轴倾斜30度：
+transform:skewX(30deg);
+
+
+顺时钟旋转30度：
+transform: rotate(30deg);
+
+rotate( )函数只是旋转，而不会改变元素的形状
+skew( )函数是倾斜，会改变元素的形状
+
+设置鼠标悬浮div1，在2秒内旋转30度
+.div1:hover{
+            transform: rotate(30deg);
+            transition:all 1s;
+}
+
+
+动画使用步骤之设置元素慢慢变宽：
+1、定义动画
+@keyframes spread {
+   0% {width:0;}
+   33% {width:23px;}
+   66% {width:46px;}
+   100% {width:69px;}
+ }
+2、绑定步骤1绑定的动画,2秒内执行完，重复执行
+.div1{
+            animation: spread 2s infinite;
+}
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+表单语法：
+<form  method="post" action="result.html">
+   <p>  名字：<input name="name" type="text" >  </p>
+   <p>  密码：<input name="pass" type="password" >  </p>
+   <p>
+      <input type="submit" name="Button" value="提交"/>
+      <input type="reset" name="Reset" value="重填“/> 
+   </p>
+</form>
+
+method：规定如何发送表单数据
+常用值：get  | post
+action：表示向何处发送表单数据
+
+
+<input  type="text"  name="fname" value="text"/>
+常见的type：指定元素的类型。text、password、checkbox、radio、submit、reset、file、hidden、image 和 button，默认为 text
+name：指定表单元素的名称
+value：元素的初始值。type 为 radio时必须指定一个值
+
+当type为text时：
+size="30" 表示文本框长度
+maxlength="20"  表示文本框可输入最多字符
+
+单选按钮：
+<input name="gen" type="radio" value="男"  checked  />男
+<input name="gen" type="radio" value="女" />女
+如果需要在男女之间选择的话，name需要一样
+
+复选框：
+<input type="checkbox" name="interest" value="sports"/>运动
+<input type="checkbox" name="interest" value="talk" checked />聊天
+<input type="checkbox" name="interest" value="play"/>玩游戏
+
+如果需要在多个选项中复选的话，需要name一样
+
+列表框：
+<select name="列表名称" size="行数">
+<option value="选项的值" selected="selected">…</option >
+<option value="选项的值">…</option >
+</select>
+
+图片按钮:
+<input  type="image"  src="images/login.gif" />
+
+普通按钮：
+<input  type="button" name="butButton" value="button按钮"/>
+
+
+重置按钮：
+<input  type="reset" name="butReset" value="reset按钮">
+
+多行文本域：
+<textarea  name="showText"  cols="x"  rows="y">文本内容 </textarea  >
+显示的列数：cols
+显示的行数：rows
+
+邮箱：
+<input type="email"  name="email"/>
+会自动验证Email地址格式是否正确
+
+网址：
+<input type="url"  name="userUrl"/>
+会自动验证URL地址格式是否正确
+
+数字：
+<input type="number"  name="num" min="0" max="100" step="10"/>
+允许的最小值:min
+允许的最大值:max
+合法的数字间隔:step
+
+搜索框：
+<input type="search"  name="sousuo"/>
+唯一的效果看似是多了一个可以清除内容的x
+
+
+隐藏域：
+<input type="hidden" value="666" name="userid">
+
+
+只读和禁用：
+<input name="name" type="text" value="张三"  readonly>
+<input type="submit "  disabled   value="保存" >
+
+
+自动将焦点转移到与该标注相关的表单元素上：
+<label for="malehahaha">标注的文本</label>
+<input type="radio" name="gender" id="malehahaha"/>
+简单来说鼠标点在上面标注的文本也可以选中radio了
+
+
+placeholder：可以描述文本框期待用户输入何种内容
+<input type="search" name="sousuo"  placeholder="请输入要搜索的关键字"/>
+
+
+规定文本框填写内容不能为空，否则就不能提交表单
+<input type="text" name="username"  required/>
+
+
+用户输入的内容必须符合正则表达式所指的规则，否则就不能提交表单
+<input type="text" name="tel"  required pattern="^1[358]\d{9}" />
+
+
+

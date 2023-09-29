@@ -1,0 +1,65 @@
+边框：
+设置上边框红颜：
+border-top-color:red; 
+依次设置上右下左边框颜色：
+border-color:#369 #000 #f00 #00f;
+
+边框粗细：
+同时设置上右下左边框：
+border-width:5px;
+
+依次设置上右下左边框粗细：
+border-width:1px 3px 5px 2px;
+
+
+边框样式：
+无边框
+border-style:none;
+
+设置上边框实线：
+border-top-style:solid; 
+
+设置上右下左边框分别是实线、虚线、虚线、双实线
+border-style:solid dotted dashed double;
+
+
+border简写：
+border: 1px solid red;
+
+
+外边距：
+上边距30px：
+margin-top:30px;
+
+同时设置上右下左外边距：
+margin: 5px 10px 0px 7px;
+
+设置外边距达到居中的效果：
+margin:0px  auto;
+网页居中对齐的必要条件
+块元素
+固定宽度
+
+
+内边距 :
+设置左内边距：
+padding-left:10px;
+
+依次设置上右下左内边距：
+padding: 5px 10px 0px 7px;
+
+
+顺时钟设置圆角边框：
+border-radius: 20px  10px  50px  30px;
+
+同时设置四个角圆角边框：
+border-radius: 50%;
+
+设置左边，上边，黄色阴影，阴影模糊范围
+box-shadow: inset 2px 2px 3px yellow;
+
+
+
+ 
+
+

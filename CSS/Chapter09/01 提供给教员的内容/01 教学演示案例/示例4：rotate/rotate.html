@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>rotate的使用</title>
+    <style>
+        div {
+            width: 300px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        img:hover {
+            /*定义动画的状态，鼠标移入旋转并放大图片*/
+            transform: rotate(-90deg) scale(2);
+            -webkit-transform: rotate(-90deg) scale(2);
+            -moz-transform: rotate(-90deg) scale(2);
+            -o-transform: rotate(-90deg) scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="image/tx.jpg" alt="img"/>
+    </div>
+</body>
+</html>

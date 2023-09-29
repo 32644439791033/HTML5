@@ -1,0 +1,49 @@
+
+body,ul, li {
+	margin:0px;
+	padding:0px;
+}
+li {
+	list-style-type:none;
+}
+#login {
+	background:url(../image/bg.jpg) 0px 0px no-repeat;
+	width:312px;
+	height:353px;
+}
+#login .content {
+	width:260px;
+	margin:0px auto;
+	padding-top:80px;
+	color:#FFF;
+	font-size:14px;
+	box-sizing: border-box;
+}
+#login li {
+	height:38px;
+	line-height:38px;
+}
+#login li span {
+	color:#F00;
+	padding-right:5px;
+}
+#login input {
+	border:1px #7b7b7b solid;
+	border-radius: 4px;
+	width:190px;
+	height:17px;
+}
+#login select{
+	border:1px #7b7b7b solid;
+	border-radius: 4px;
+}
+#login .btnRegist {
+	background:url(../image/btn.jpg) 0px 0px no-repeat;
+	width:152px;
+	height:49px;
+	border:0px;
+	cursor:pointer;
+}
+#login .btn {
+	text-align:center;
+}

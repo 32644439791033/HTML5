@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*通用部分*/
+body{
+	line-height:25px;
+	font-size:12px;
+	background:#EcEcEc;
+	color:#333;
+}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+img{ border:0;}
+ul{ list-style:none;}
+table{border-collapse:collapse;}
+a,a:hover{ font-size:12px; text-decoration:none; color:#000;}
+#container{
+	margin:0 auto;
+	width:960px;
+	background:#ffffff;
+	
+	}
+#top,#content,#bottom{
+	clear:both;
+	}
+.left{
+	float:left;
+	display:inline;
+}
+.right{
+	float:right;
+	display:inline;
+	}
+/*顶部CSS样式*/
+.logo{
+	width:235px;
+	height:105px;
+	}
+.topRight{
+	height:105px;
+	width:420px;
+	}
+.nav{
+	background-image:url(../newImages/menuBg.gif);
+	background-repeat:repeat-x;
+	height:40px;
+	clear:both;
+	}
+.nav li{
+	float:right;
+	width:100px;
+	padding-top:10px;
+	height:30px;
+	text-align:center;
+	display:inline;
+	}
+#navN01{width:50px;}
+.nav li a,.nav li a:hover{
+	text-decoration:none;
+	font-weight:bold;
+	font-size:14px;
+	color:#333;
+	}
+	
+#content{
+	width:950px;
+	margin:0px auto;
+	}
+
+/*底部CSS样式*/
+#bottom{
+	margin:0px auto;
+	width:950px;
+	height:155px;
+	}
+#bottom li{float:left;}
+.bottomLeft,.bottomRight{
+	background-repeat:no-repeat;
+	width:40px;
+	height:155px;
+	}
+.bottomLeft{background-image:url(../newImages/bottomLeft.gif);}
+.bottomRight{background-image:url(../newImages/bottomRight.gif);}
+.bottomBg{
+	background-image:url(../newImages/bottomBg.gif);
+	background-repeat:repeat-x;
+	padding-top:30px;
+	text-align:center;
+	height:125px;
+	width:870px;
+	}
+

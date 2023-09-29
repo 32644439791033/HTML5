@@ -1,0 +1,98 @@
+无序列表标签：
+<ul>
+      <li>范冰冰演藏族女孩</li>
+      <li>撞死两个人后自拍</li>
+      <li>诗隆甜蜜出游</li>
+      <li>一线城市楼市退烧</li>
+</ul>
+特性：
+没有顺序，每个<li>标签独占一行（块元素）
+默认<li>标签项前面有个实心小圆点
+一般用于无序类型的列表，如导航、侧边栏新闻、有规律的图文组合模块等
+
+
+有序列表：
+<ol>
+  <li>范冰冰演藏族女孩</li>
+  <li>撞死两个人后自拍</li>
+  <li>诗隆甜蜜出游</li>
+  <li>一线城市楼市退烧</li>
+</ol>
+有序列表的特性
+有顺序，每个<li>标签独占一行（块元素）
+默认<li>标签项前面有顺序标记
+一般用于排序类型的列表，如试卷、问卷选项等
+
+定义列表：
+<dl>
+    <dt>水果</dt>
+    <dd>苹果</dd>
+    <dd>桃子</dd>
+    <dd>李子</dd>
+</dl>
+定义列表的特性
+没有顺序，每个<dt>标签、<dd>标签独占一行（块元素）
+默认没有标记
+一般用于一个标题下有一个或多个列表项的情况
+
+
+表格的基本语法：
+<table>
+    <tr>
+         <td>第1个单元格的内容</td>
+         <td>第2个单元格的内容</td>
+    </tr>
+    <tr>
+         <td>第1个单元格的内容</td>
+         <td>第2个单元格的内容</td>
+    </tr>
+</table>
+表格标签：<table></table>
+行标签：<tr></tr>
+单元格标签：<td></td>
+
+表格的跨列：
+<tr>
+         <td colspan="所跨的列数">第1个单元格的内容</td>
+         <td>第2个单元格的内容</td>
+</tr>
+
+表格的跨列：
+<tr>
+         <td rowspan="所跨的行数">第1个单元格的内容</td>
+         <td>第2个单元格的内容</td>
+</tr>
+
+
+视频元素：
+<video src="视频路径"  controls loop></video>
+src：指定要播放的视频文件的路径
+controls：提供播放、暂停和音量的控件
+loop：循环播放
+
+让浏览器自动选择可播放的视频：
+<video controls>
+    <source src="video/video.webm" type="video/webm"/>
+    <source src="video/video.mp4" type="video/mp4"/>
+</video>
+
+
+让浏览器自动选择可播放的音频：
+<audio controls>
+    <source src="music/music.mp3" type="audio/mpeg"/>
+    <source src="music/music.ogg" type="audio/ogg"/>
+    你的浏览器不支持audio元素
+</audio>
+
+
+<header><h2>网页头部</h2> </header>
+ <section><h2>网页主体部分</h2></section>
+ <footer><h2>网页底部</h2></footer>
+
+使用内联框架的步骤：
+1、<iframe src="第一次加载的时候iframe显示的页面" name="mainFrame" ></iframe>
+2、<a href="subframe/the_second.html "  target="mainFrame">下边显示第二页</a>
+
+
+
+

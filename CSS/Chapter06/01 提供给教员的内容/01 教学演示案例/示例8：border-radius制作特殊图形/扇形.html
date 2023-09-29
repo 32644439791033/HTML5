@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>border-radius制作扇形</title>
+    <style>
+        div{
+            background: red;
+            margin: 30px;
+        }
+        div:nth-of-type(1){
+            width: 50px;
+            height: 50px;
+            border-radius: 50px 0 0 0;
+        }
+        div:nth-of-type(2){
+            width: 50px;
+            height: 50px;
+            border-radius:0 50px 0 0;
+        }
+        div:nth-of-type(3){
+            width: 50px;
+            height: 50px;
+            border-radius:0 0 50px 0;
+        }
+        div:nth-of-type(4){
+            width: 50px;
+            height: 50px;
+            border-radius: 0 0 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

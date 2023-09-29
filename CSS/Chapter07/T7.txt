@@ -1,0 +1,43 @@
+一.浮动：float
+	float:left;向左浮动
+	      right;向右浮动
+	      none;不浮动
+	特性：脱离标准文档流
+	      将块级元素转换为内联元素
+	      文字将会环绕浮动元素显示
+
+
+
+二.clear:清除浮动(不是去掉浮动，让后面的元素不受上面浮动元素的影响)
+	left:清除上一个浮动元素的左浮动
+	right:清除上一个浮动元素的右浮动
+	both:清除所有的浮动
+
+
+三.溢出处理：overflow
+	visible:默认的，超出的部分继续显示
+	hidden：超出部分不显示(隐藏)	
+	scroll:显示滚动条
+	auto：自动调整滚动条的出现
+	
+
+
+四.display:
+  1.display:block;/*将内联元素转换为块级元素，显示元素内容*/
+  2.display:inline;/*将块级元素转换为内联元素*/
+  3.display:none;/*隐藏元素*/
+  4.display:inline-block;/*既有块级元素又具有内联元素的特性*/
+
+五.解决父级边框塌陷的方法
+  1.在浮动元素后面加空的div 清除两边的浮动 clear：both
+  2.设置父类元素的高度
+  3.使用voerflow属性:overflow:hidden
+  4.位父类添加伪类after:
+   .clear:after{
+	content: '';/*空内容*/
+	display: block;/*显示为块元素*/
+	clear: both;/*清除左右浮动*/
+    }
+
+
+

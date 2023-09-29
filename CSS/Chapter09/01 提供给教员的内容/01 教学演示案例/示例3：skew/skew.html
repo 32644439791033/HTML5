@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>skew的使用</title>
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            width: 80px;
+            line-height: 40px;
+            background: rgba(242, 123, 5, 0.61);
+            border-radius: 6px;
+            font-size: 16px;
+            margin-left: 3px;
+        }
+        li a{
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            text-align: center;
+            height: 40px;
+            
+        }
+        li a:hover{
+            background: rgba(242, 88, 6, 0.87);
+            border-radius: 6px;
+            /*设置a元素在鼠标移入时向左下角倾斜*/
+            /*transform: skew(40deg,-20deg);*/
+            /*-webkit-transform: skew(40deg,-20deg);*/
+            /*-moz-transform: skew(40deg,-20deg);*/
+            /*-o-transform: skew(40deg,-20deg);*/
+            transform: skewX(40deg);
+            -webkit-transform: skewX(40deg);
+            -moz-transform: skewX(40deg);
+            -o-transform: skewX(40deg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">服装城</a></li>
+        <li><a href="#">美妆馆</a></li>
+        <li><a href="#">超市</a></li>
+        <li><a href="#">全球购</a></li>
+        <li><a href="#">闪购</a></li>
+        <li><a href="#">团购</a></li>
+        <li><a href="#">拍卖</a></li>
+        <li><a href="#">金融</a></li>
+    </ul>
+</body>
+</html>

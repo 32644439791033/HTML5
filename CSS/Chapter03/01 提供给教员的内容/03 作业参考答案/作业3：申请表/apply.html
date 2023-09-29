@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> 申请表 </title>
+
+</head>
+<body>
+<form action="http://www.mycom.cn/reg/" method="post">
+    <H2>申请表</H2>
+
+    <p>
+        <label for="EName">姓名：</label>
+        <input type="text" id="EName" name="EName" size="30" maxlength="30" value=""/>
+    </p>
+
+    <p>
+        <label>教育程度：</label>
+        <input type="checkbox" name="Graduate" checked/>硕士
+        <input type="checkbox" name="Post Graduate"/>博士
+    </p>
+
+    <p>
+        <label for="email">常用邮箱：</label>
+        <input type="email" id="email" name="email"/>
+    </p>
+
+    <P>性别：
+        <input type="radio" name="Gender" id="man" value="Male" checked/>
+        <label for="man">男</label>
+        <input type="radio" name="Gender" id="woman" value="Female"/>
+        <label for="woman">女</label>
+    </P>
+
+    <P>
+        <label for="age">年龄：</label>
+        <input type="number" name="Salary" id="age"/>
+    </P>
+
+    <P>
+        <label for="qian">月薪：</label>
+        <input type="text" name="Salary" id="qian" size="10" maxlength="10" value=""/>
+    </P>
+
+    <P>
+        <label for="beizhu">附注：</label>
+        <textarea rows="3" cols="30" id="beizhu">请在这里键入附注</textarea>
+    </P>
+
+    <P>国籍
+        <select name="Country">
+            <option value="American">美国</option>
+            <option value="Australia" selected>澳大利亚</option>
+            <option value="Japan">日本</option>
+            <option value="Singapore">新加坡</option>
+        </select>
+    </P>
+    <P>
+        <input type="submit" value=" 提 交 "/>
+        <input type="reset" value=" 重 置 "/>
+    </P>
+</form>
+</body>
+</html>
+

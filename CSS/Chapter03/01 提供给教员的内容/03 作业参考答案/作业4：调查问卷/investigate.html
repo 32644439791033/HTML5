@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>电子产品调查问卷</title>
+</head>
+<body>
+<h2 >American Metric  电子产品调查表</h2>
+
+<form method="post" action="#">
+    <P>
+        <label for="user">姓名：</label>
+        <input type="text" id="user" name="Name" size="30" required placeholder="输入必须是2-6为字符"/>
+    </P>
+
+    <P>购买日期：
+        <input type="text" name="time" size="6" required/>
+        年
+        <select name="Month">
+            <option selected>1 月</option>
+            <option>2 月</option>
+            <option>3 月</option>
+            <option>4 月</option>
+            <option>5 月</option>
+            <option>6 月</option>
+            <option>7 月</option>
+            <option>8 月</option>
+            <option>9 月</option>
+            <option>10 月</option>
+            <option>11 月</option>
+            <option>12 月</option>
+        </select>
+        月
+        <select name="Date">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        日
+    </P>
+
+    <P>
+        <label for="email">电子邮件地址：</label>
+        <input type="email" id="email" name="Email" size="30" required placeholder="www.baidu.com"/>
+    </P>
+    <P>
+        <label for="tel">手机号码：</label>
+        <input type="text" id="tel" name="Name" size="40" required placeholder="输入必须是以13/15/18开头的11为数字"/>
+    </P>
+    <P>您是否查看过我们的在线产品目录？
+        <input type="radio" name="Online catalog" value="Yes" checked/>是
+        <input type="radio" name="Online catalog" value="No"/>否
+    </P>
+
+    <P>如果查看过，您对哪些产品有兴趣购买？ （选择提供的产品）<br/>
+
+        <input type="checkbox" name="Product interest" value="Big Screen TV">
+        大屏幕电视机&nbsp;
+        <input type="checkbox" name="Product interest" value="Audio equipment">音频设备
+        <input type="checkbox" name="Product interest" value="Video equipment">视频设备
+        <input type="checkbox" name="Product interest" value="Camera Equipment">相机
+    </P>
+
+    <P>在填写订单之前，您还有什么问题、意见或建议？<BR>
+        <textarea name="Comments" rows="3" cols="50">您的输入： </textarea>
+    </P>
+
+    <P>
+        <input type="submit" value=" 提 交 ">
+        <input type="reset" value=" 重 置 " disabled>
+    </P>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#nav {
+	width:230px;
+	background-color:#D7D7D7;
+}
+.title {
+	/*background-color:#C00;*/
+	font-size:18px;
+	font-weight:bold;
+	color:#FFF;
+	text-indent:1em;
+	line-height:35px;
+	/*background-image:url(../image/arrow-down.gif);
+	background-repeat:no-repeat;
+	background-position:205px 10px;*/
+	background:#C00 url(../image/arrow-down.gif) 205px 10px no-repeat;
+}
+#nav ul li {
+	height:30px;
+	line-height:25px;
+	list-style: none;
+	background-image:url(../image/arrow-right.gif);
+	background-repeat:no-repeat;
+	background-position:170px 2px;
+}
+a {
+	font-size:14px;
+	text-decoration:none;
+	color:#000;
+}
+a:hover {
+	color:#F60;
+	text-decoration:underline;
+}

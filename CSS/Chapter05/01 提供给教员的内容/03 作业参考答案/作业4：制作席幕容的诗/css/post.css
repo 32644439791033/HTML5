@@ -1,0 +1,51 @@
+
+body {
+    font-size: 12px;
+    color: #333;
+    font-family: Verdana, Arial, Helvetica, sans-serif, "宋体";
+    line-height: 30px;
+}
+
+#poem {
+    width: 400px;
+    background: linear-gradient(to bottom,#caeffe,#ffffed);
+}
+
+h1 {
+    font-size: 18px;
+    color: #0d7dac;
+    text-align: center;
+    text-shadow: #000 1px 1px 1px;
+}
+
+span {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 22px;
+}
+
+.first {
+    font-size: 18px;
+    color: #6e17f0;
+    font-weight: bold;
+    text-shadow: #fff 2px 2px 2px,#000 2px 2px 2px,#fff -2px -2px 2px;
+}
+.important {
+    color: #4c67f4;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+.last{
+    color: #339900;
+    text-decoration: underline;
+
+}
+
+

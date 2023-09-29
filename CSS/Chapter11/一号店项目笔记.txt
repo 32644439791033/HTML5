@@ -1,0 +1,15 @@
+box-shadow: 1px 1px 3px #888888;
+第一个参数：阴影往x轴移动的范围
+第二个参数：阴影往y轴移动的范围
+第三个参数：阴影往y轴移动的模糊距离
+第四个参数：阴影颜色
+
+
+vertical-align：
+这是一幅<img class="top" border="0" src="/i/eg_cute.gif" />位于段落中的图像。
+
+img.top {vertical-align:text-top}
+
+效果为文字在图片的最上面一层，相当于改变文字的位置
+
+

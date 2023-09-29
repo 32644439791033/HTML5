@@ -1,0 +1,8 @@
+
+body{font-family: Times,"Times New Roman", "楷体";}
+h1{font-size:24px; font-style:italic;}
+h1 span{font-style:oblique; font-weight:normal;}
+h2{font-size:16px; font-style:normal;}
+p{font-size:12px;}
+p span{font-weight:bold;}
+p span{font:oblique bold 12px "楷体";}

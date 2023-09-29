@@ -1,0 +1,102 @@
+span：空标签，不自带样式
+
+字体样式：
+font-family
+例如：
+body{font-family: Times,"Times New Roman", "楷体";}
+可以多选字体，如果前面的字体电脑没有安装就自动选择后面的字体
+
+font-size属性：
+h1{font-size:24px;}
+
+font-style属性
+normal 正常
+italic和oblique 斜体
+
+font-weight属性：
+font-weight: lighter;/*更细的字体*/
+font-weight: normal;/*正常的字体*/
+font-weight: bold;/*粗体字体*/
+font-weight: bolder;/*更粗的字体*/
+
+font属性：
+字体属性的顺序：字体风格→字体粗细→字体大小→字体类型
+p span{font:oblique bold 12px "楷体";}
+
+文本属性:
+color:rgba(0,0,255,0.5);/*红绿蓝，透明度，0是透明，1是完全不透明*/
+text-align: center;/*字体居中*/
+text-align: right;/*字体居右*/
+text-align: left;/*字体居左*/
+text-align: justify;/*字体俩端对齐*/
+
+
+text-decoration: none;/*默认值，定义的标准文本*/
+text-decoration: underline;/*设置文本的下划线
+*/
+text-decoration: overline;/*设置文本的上划线
+*/
+text-decoration: line-through;/*设置文本的删除线*/
+
+文本阴影
+text-shadow : color  x-offset  y-offset  blur-radius；
+color：阴影颜色
+x-offset：X轴位移，用来指定阴影水平位移量
+y-offset：Y轴位移，用来指定阴影垂直位移量
+blur-radius：阴影模糊半径，代表阴影向外模糊的模糊范围
+
+例如：
+.hengjiji{
+            text-shadow: red 2px 2px 1px;
+}
+
+
+超链接伪类：
+        /*未单击访问时超链接样式*/
+        a:link{
+            color: aqua;
+        }
+        /*单击访问后超链接样式*/
+        a:visited{
+            color: fuchsia;
+        }
+        /*鼠标悬浮其上的超链接样式*/
+        a:hover{
+            color: yellow;
+        }
+        /*鼠标单击未释放的超链接样式*/
+        a:active{
+            color: green;
+        }
+设置伪类的顺序：a:link->a:visited->a:hover->a:active
+
+
+列表样式：
+li {
+	list-style:none;
+}
+比如可以去掉小圆点
+
+设置背景定位：
+background-position: 10px 0px;/*背景图片距离左侧10像素，距离顶部0px*/
+
+设置背景图像：
+background-image:url(图片路径);
+background-repeat: no-repeat;
+或者
+background:#C00 url(../image/arrow-down.gif) 10px 0px no-repeat;
+背景颜色 背景图像 背景定位 背景不重复显示
+
+background-size: 10px 10px;/*设置长宽的像素*/
+background-size: auto;/*背景图片保持原样
+*/
+background-size: cover;/*整个背景图片放大填充了整个元素
+*/
+background-size: contain;/*让背景图片保持本身的宽高比例，将背景图片缩放到宽度或者高度正好适应所定义背景的区域*/
+
+
+线性渐变：
+linear-gradient ( position,  color1,  color2,…)
+比如：
+background-image: linear-gradient(red,green,blue);
+

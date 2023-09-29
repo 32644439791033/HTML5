@@ -1,0 +1,41 @@
+
+body,ul, li, h1 {
+	padding:0px;
+	margin:0px;
+}
+li {
+	list-style:none;
+}
+#course_list {
+	width:220px;
+	border:1px #aacbee solid;
+	padding:0px 0px 10px 0px;
+	background-color:#f5f9fc;
+	margin:0px auto;
+}
+.titles {
+	background:url(../image/title_icon.gif) 5px 8px no-repeat;
+	padding-left:25px;
+	color:#1f376d;
+	font-size:14px;
+	line-height:30px;
+	height:30px;
+}
+#course_list ul {
+	padding:0px 5px;
+}
+#course_list ul li {
+	height:30px;
+	background:url(../image/submenu.gif) right center no-repeat;
+	line-height:30px;
+	padding-left:5px;
+	border-top:1px #cfe2f5 solid;
+}
+#course_list ul a {
+	text-decoration:none;
+	color:#000000;
+}
+#course_list ul a:hover {
+	text-decoration:none;
+	color:#FF6215;
+}

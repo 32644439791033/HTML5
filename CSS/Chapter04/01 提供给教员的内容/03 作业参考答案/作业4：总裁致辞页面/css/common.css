@@ -1,0 +1,17 @@
+/* CSS Document */
+h1 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 12px;
+}
+
+p strong {
+    color: red;
+}
+
+p em {
+    font-size: 16px;
+    color: blue;
+}
