@@ -1,0 +1,65 @@
+body, p, ul, li {
+	margin:0;
+	padding:0;
+}
+ul, li {
+	list-style-type:none;
+}
+body {
+	background-color:#eee7e1;
+	font-size:12px;
+}
+img {
+	border:0;
+}
+#cosmetics {
+	width:255px;
+	background-color:#FFF;
+}
+#cosmetics .title {
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+	background-color:#e9185a;
+	height:35px;
+	line-height:35px;
+	padding-left:10px;
+}
+#cosmetics li {
+	border-bottom:1px #a8a5a5 dashed;
+	line-height:30px;
+	padding-left:2px;
+}
+#cosmetics li div {
+	display:none;
+	text-align:center;
+}
+#cosmetics a {
+	color:#666666;
+	text-decoration:none;
+}
+#cosmetics a:hover {
+	color:#e9185a;
+}
+#cosmetics a span {
+	color:#FFF;
+	font-weight:bold;
+	margin-right: 10px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #373b3c;
+	line-height: 20px;
+	text-align: center;
+}
+#cosmetics a:hover span {
+	color:#FFF;
+	background:url(../image/dot_02.gif) 0 5px no-repeat;
+}
+#cosmetics a:hover span{
+	background: #e9185a;
+}
+#cosmetics a:hover div {
+	display:block;
+}

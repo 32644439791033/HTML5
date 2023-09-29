@@ -1,0 +1,38 @@
+
+.book {
+	width:290px;
+	background-color:#f3f4df;
+	background: linear-gradient(to bottom,#f9fbcb,#f8f8f3);
+}
+.title {
+	font-size:16px;
+	color:#FFF;
+	line-height:30px;
+	text-indent:1em;
+	background:#518700 url(../image/bang.gif) 100px 2px no-repeat;
+	background-size: contain;
+}
+ul li {
+	list-style-type:none;
+	line-height:28px;
+	font-size:12px;
+	text-indent:2em;
+}
+ul li:nth-of-type(1){background:url(../image/book_no01.gif) 0 center no-repeat;}
+ul li:nth-of-type(2){background:url(../image/book_no02.gif) 0 center no-repeat;}
+ul li:nth-of-type(3){background:url(../image/book_no03.gif) 0 center no-repeat;}
+ul li:nth-of-type(4){background:url(../image/book_no04.gif) 4px center no-repeat;}
+ul li:nth-of-type(5){background:url(../image/book_no05.gif) 4px center no-repeat;}
+ul li:nth-of-type(6){background:url(../image/book_no06.gif) 4px center no-repeat;}
+ul li:nth-of-type(7){background:url(../image/book_no07.gif) 4px center no-repeat;}
+ul li:nth-of-type(8){background:url(../image/book_no08.gif) 4px center no-repeat;}
+ul li:nth-of-type(9){background:url(../image/book_no09.gif) 4px center no-repeat;}
+ul li:nth-of-type(10){background:url(../image/book_no10.gif) 4px center no-repeat;}
+
+ul li a {
+	color:#1a66b3;
+	text-decoration:none;
+}
+ul li a:hover {
+	text-decoration:underline;
+}

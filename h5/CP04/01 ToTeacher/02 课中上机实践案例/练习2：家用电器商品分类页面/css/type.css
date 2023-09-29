@@ -1,0 +1,46 @@
+
+#type {
+	width:300px;
+}
+#title {
+	font-size:18px;
+	text-indent:1em;
+	/*background-color:#0f7cbf;*/
+	background: linear-gradient(to bottom,#0467ac,#63a7d6,#b6dbf5);
+	line-height:35px;
+	height: 35px;
+	color:#FFF;
+	font-weight:bold;
+}
+
+li{
+	list-style: none;
+}
+.secondTitle {
+	background-color:#e4f1fa;
+	background: linear-gradient(to bottom,#e4f1fa,#bddff7,#e4f1fa);
+	text-indent:2em;
+	font-size:14px;
+	line-height:30px;
+	font-weight:bold;
+}
+.secondTitle a {
+	color:#0565c6;
+	text-decoration:none;
+}
+.secondTitle a:hover {
+	text-decoration:underline;
+}
+p {
+	line-height:26px;
+	text-indent:1em;
+}
+p a {
+	color:#666666;
+	text-decoration:none;
+	
+}
+p a:hover {
+	color:#F60;
+	text-decoration:underline;
+}

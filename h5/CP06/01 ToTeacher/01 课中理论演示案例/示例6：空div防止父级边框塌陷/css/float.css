@@ -1,0 +1,46 @@
+div {
+	margin:10px;
+	padding:5px;
+}
+#father {
+	border:1px #000 solid;
+}
+.layer01 img
+{
+	width: 150px;
+	height: 150px;
+}
+.layer02 img
+{
+	width: 90px;
+	height: 90px;
+}
+.layer03 img
+{
+	width: 150px;
+	height: 70px;
+}
+.layer01 {
+	border:1px #F00 dashed;
+	float:left;
+}
+.layer02 {
+	border:1px #00F dashed;
+	float:right;
+}
+.layer03 {
+	border:1px #060 dashed;
+	float:left;
+}
+.layer04 {
+	border:1px #666 dashed;
+	font-size:12px;
+	line-height:23px;
+	width: 200px;
+	float: right;
+}
+.clear{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}

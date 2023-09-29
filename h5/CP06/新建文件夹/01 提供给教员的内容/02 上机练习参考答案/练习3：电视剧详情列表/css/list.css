@@ -1,0 +1,101 @@
+body, ul, p, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: none;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #666666;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#main {
+    width: 328px;
+    margin: 10px auto;
+}
+
+#title h2 {
+    border: 1px #e0e0e8 solid;
+    font-size: 12px;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 38px;
+    background: url(../image/1.gif) no-repeat 11px 7px;
+}
+#top {
+    margin: 14px 0 0 0;
+}
+#pic {
+    float: left;
+}
+#pic a img {
+    border: 1px solid #e0e0e8;
+    padding: 2px;
+    background: #FFFFFF;
+}
+#text {
+    float: right;
+    width: 198px;
+}
+#text h2 {
+    font-size: 12px;
+}
+
+#text h2 a {
+    color: #000000;
+}
+
+#text h3 {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    word-spacing: 6px;
+}
+
+#text h3 span {
+    color: #666666;
+}
+
+#text p {
+    font-size: 12px;
+    color: #666666;
+    line-height: 22px;
+}
+
+#text .m {
+    margin: 4px 0 0 0;
+}
+
+#text .d {
+    margin: 14px 0 14px 0;
+}
+
+
+
+ul {
+    margin: 20px 0 0 0;
+}
+
+ul li {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+ul li span {
+    color: #888888;
+    float: right;
+}
+
+ul li a {
+    float: left;
+}
+
+ul li {
+    margin: 11px 0 0 0;
+}

@@ -1,0 +1,15 @@
+
+h2 {
+    font-size: 18px;
+    font-family: "楷体";
+}
+
+p {
+    font: 12px "Times New Roman", "Times", "宋体";
+    line-height: 20px;
+}
+
+p span {
+    font-weight: bold;
+    color: #F00;
+}

@@ -1,0 +1,34 @@
+h2 {
+    color: #003580;
+}
+
+#text {
+    font-size: 14px;
+    color: #000033;
+}
+
+.font1 {
+    color: #f00;
+}
+
+.font2 {
+    color: #1f87cc;
+}
+
+.font3, .font5 {
+    color: #faa53b;
+}
+
+.font4 {
+    color: #0d7114;
+}
+
+.img1 {
+    width: 100px;
+    height: 160px;
+}
+
+.img2 {
+    width: 200px;
+    height: 130px;
+}

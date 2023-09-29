@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>仿京东企业用户注册</title>
+  <style>
+	.reg-box{
+		width:990px;
+		margin:50px auto;
+		border:1px #d7d7d7 solid;
+		border-top:0 none;
+		font-size:14px;
+	}
+	.reg-box h3{
+		height:28px;
+		line-height:28px;
+		background:#f7f7f7;
+		padding-left:10px;
+		border-top:1px #d7d7d7 solid;
+		font-size:14px;
+		font-weight:normal;
+	}
+	.item{
+		line-height:35px;
+		padding-top:10px;
+		margin-bottom:20px;
+	}
+	.item > label{
+		display:inline-block;
+		width:290px;
+		text-align:right;
+		color:#999;
+		padding-right:8px;
+	}
+	label > span{
+		color:#f00;
+		margin-right:5px;
+	}
+	.reg-box input[type="text"],.reg-box input[type="password"]{
+		width:240px;
+		height:33px;
+		padding:0 25px 0 5px;
+		border:1px #ccc solid;
+	}
+	.reg-box input[id]{
+		background:url(img/one4.jpg) no-repeat 245px center;
+	}
+	.reg-box input[type="password"]{
+		background:url(img/one5.jpg) no-repeat 245px center;
+	}
+	.reg-box select{
+		height:34px;
+		border:1px #ccc solid;
+	}
+	.item > label.type{
+		width:auto;
+		margin-right:10px;
+		margin-left:3px;
+	}
+	.reg-box input[type="button"]{
+		width:270px;
+		height:36px;
+		line-height:36px;
+		font-size:16px;
+		border:0 none;
+		background:#d40303;
+		color:#fff;
+		cursor:pointer;
+	}
+	.reg-box input[type="button"]:hover{
+		background:#ea0303;
+	}
+  </style>
+ </head>
+ <body>
+	<form action="" method="post" class="reg-box">
+		<h3>账户信息</h3>
+		<div class="item">
+			<label><span>*</span>用户名：</label><input type="text" name="nick" id="nick"/>
+		</div>
+		<div class="item">
+			<label><span>*</span>请设置密码：</label><input type="password" name="psw"/>
+		</div>
+		<div class="item">
+			<label><span>*</span>请确认密码：</label><input type="password" name="pswAgin"/>
+		</div>
+		<h3>联系人信息</h3>
+		<div class="item">
+			<label><span>*</span>联系人姓名：</label><input type="text" name="name"/>
+		</div>
+		<div class="item">
+			<label><span>*</span>所在部门：</label>
+			<select><option>请选择</option><option>办公室</option><option>市场部</option><option>技术部</option></select>
+		</div>
+		<div class="item">
+			<label><span>*</span>固定电话：</label><input type="text" name="tel"/>
+		</div>
+		<h3>公司信息</h3>
+		<div class="item">
+			<label><span>*</span>公司名称：</label><input type="text" name="companyname"/>
+		</div>
+		<div class="item">
+			<label><span>*</span>购买类型/用途：</label>
+			<input type="checkbox" name="type" id="popus1"/><label class="type" for="popus1">IT设备</label>
+			<input type="checkbox" name="type" id="popus2"/><label class="type" for="popus2">数码通讯</label>
+			<input type="checkbox" name="type" id="popus3"/><label class="type" for="popus3">办公用品耗材</label>
+			<input type="checkbox" name="type" id="popus4"/><label class="type" for="popus4">大家电</label>
+			<input type="checkbox" name="type" id="popus5"/><label class="type" for="popus5">项目合作-政府采购</label>
+			<input type="checkbox" name="type" id="popus6"/><label class="type" for="popus6">礼品</label>
+		</div>
+		<div class="item">
+			<label></label>
+			<input type="button" value="立即注册"/>
+		</div>
+	</form>
+ </body>
+</html>

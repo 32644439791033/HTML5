@@ -1,0 +1,21 @@
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+}
+ul li {
+    height: 30px;
+    line-height: 25px;
+    text-indent: 1em;
+    list-style: none;
+}
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: #F60;
+    text-decoration: underline;
+}

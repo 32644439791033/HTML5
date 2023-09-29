@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>使用CSS3结构伪类选择器</title>
+	<style>
+		/*ul的第一个子元素*/
+		ul li:first-child{
+			background: red;
+		}
+		/*ul的最后一个子元素*/
+		ul li:last-child{
+			background: green;
+		}
+
+		/*body下面的第2个p元素*/
+		/*p:nth-child(2){*/
+			/*background: yellow;*/
+		/*}*/
+		/*选择到父级里的第一子元素p*/
+		p:nth-child(1){
+			background: yellow;
+		}
+
+		/*父元素里第2个类型为p的元素*/
+		p:nth-of-type(2){
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+<!--演示的时候可以先把h2注释掉，等讲解E F:nth-child(n)和E F:nth-of-type(n)时候在打开-->
+	<!--<h2>结构伪类选择器</h2>-->
+	<p>p1</p>
+	<p>p2</p>
+	<p>p3</p>
+	<ul>
+		<li>li1</li>
+		<li>li2</li>
+		<li>li3</li>
+	</ul>
+</body>
+</html>

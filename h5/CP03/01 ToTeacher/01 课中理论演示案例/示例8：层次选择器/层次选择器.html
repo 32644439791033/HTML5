@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>使用CSS3层次选择器</title>
+	<style type="text/css">
+
+		p,ul{
+			border: 1px solid red;  /*边框属性*/
+		}
+
+		/*后代选择器*/
+		/*body p{*/
+			/*background: red;*/
+		/*}*/
+		/*子选择器*/
+		/*body>p{*/
+			/*background: pink;*/
+		/*}*/
+		/*/!*相邻兄弟选择器*!/*/
+		/*.active + p{*/
+			/*background: green;*/
+		/*}*/
+		/*/!*通用选择器*!/*/
+		.active~p{
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<p  class="active">1</p><!-- 为了说明相邻兄弟选择器，在此处添加一个类名active -->
+	<p>2</p>
+	<p>3</p>
+	<ul>
+		<li>
+			<p>4</p>
+		</li>
+		<li>
+			<p>5</p>
+		</li>
+		<li>
+			<p>6</p>
+		</li>
+	</ul>
+
+</body>
+</html>

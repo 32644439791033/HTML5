@@ -1,0 +1,113 @@
+*{padding:0;margin:0;}
+a{text-decoration:none;color:#666;}
+a:hover{text-decoration:underline;color:#b61d1d;}
+body,html{font:12px/1.5 "微软雅黑",Arial;color:#666;}
+.wrap{width:990px;margin:0 auto;}
+.left{float:left;}
+.right{float:right;}
+
+.logo-box{
+	height:60px;
+	padding-top:10px;
+}
+.logo-r{
+	font-size:24px;
+	padding-left:20px;
+	margin-top:10px;
+}
+
+.content{
+	background:#e93854;
+	margin-top:15px;
+}
+.login-box{
+	height:475px;
+	background:url(../image/banner.png) no-repeat left top;
+}
+.login-form{
+	float:right;
+	margin-top:40px;
+	width:306px;
+	padding:20px;
+	background:#fff;
+}
+.login-form h2{
+	font-weight:normal;
+	font-size:20px;
+	height:27px;
+	margin-bottom:25px;
+}
+.login-form h2 a{
+	font-size:14px;
+	color:#b61d1d;
+	padding-left:21px;
+	line-height:29px;
+	float:right;
+	background:url(../image/icon5.jpg) 0 center no-repeat ;
+}
+.login-form .item{
+	height:38px;
+	margin-bottom:20px;
+	border:1px #bdbdbd solid;
+}
+.item input{
+	float:left;
+	border:0 none;
+	padding:10px 0 10px 10px;
+	font-size:14px;
+	line-height:18px;
+	width:255px;
+	color:#999;
+}
+.item label{
+	border-right:1px #bdbdbd solid;
+	width:38px;
+	height:38px;
+}
+.item .nick{
+	background:url(../image/icon1.jpg) no-repeat;
+}
+
+.item .psw{
+	background:url(../image/icon2.jpg) no-repeat;
+}
+.item2{
+	font-size:0;
+	margin-bottom:15px;
+}
+.item2 label{
+	font-size:12px;
+	vertical-align:middle;
+}
+.item2 input{
+	vertical-align:middle;
+	margin-right:3px;
+}
+.item2 a{
+	float:right;
+	font-size:12px;
+}
+.login-btn{
+	display:block;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	color:#fff;
+	background:#e4393c;
+	font-size:18px;
+}
+.login-btn:hover{
+	color:#fff;
+	text-decoration:none;
+}
+.footer{
+	text-align:center;
+	margin-top:20px;
+	padding-bottom:30px;
+}
+.link a{
+	margin:0 10px;
+}
+.copy{
+	margin-top:8px;
+}

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS3属性选择器的使用</title>
+    <style type="text/css">
+        /*此段代码只是让结构更美观，后续会详细讲解*/
+        .demo a {
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background: #aac;
+            color: blue;
+            font: bold 20px/50px Arial;
+            margin-right: 5px;
+            text-decoration: none;
+            margin: 5px;
+        }
+        /*存在属性id的元素*/
+        /*a[id] {*/
+            /*background: yellow;*/
+        /*}*/
+        /*/!*属性id=first的元素*!/*/
+        /*a[id=first] {*/
+            /*background: red;*/
+        /*}*/
+        /*/!*属性class="links"的元素*!/*/
+        /*a[class="links"] {*/
+            /*background: red;*/
+        /*}*/
+        /*/!*属性class里包含links字符串的元素*!/*/
+        /*a[class*=links] {*/
+            /*background: red;*/
+        /*}*/
+        /*/!*属性href里以http开头的元素*!/*/
+        /*a[href^=http] {*/
+            /*background: red;*/
+        /*}*/
+        /*/!*属性href里以png结尾的元素*!/*/
+        a[href$=png] {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<p class="demo">
+    <a href="http://www.baidu.com" class="links item first" id="first" >1</a>
+    <a href="" class="links active item" title="test website" target="_blank" >2</a>
+    <a href="sites/file/test.html" class="links item"  >3</a>
+    <a href="sites/file/test.png" class="links item" > 4</a>
+    <a href="sites/file/image.jpg" class="links item" >5</a>
+    <a href="efc" class="links item" title="website link" >6</a>
+    <a href="/a.pdf" class="links item" >7</a>
+    <a href="/abc.pdf" class="links item" >8</a>
+    <a href="abcdef.doc" class="links item" >9</a>
+    <a href="abd.doc" class="linksitem last" id="last">10</a>
+</p>
+</body>
+</html>

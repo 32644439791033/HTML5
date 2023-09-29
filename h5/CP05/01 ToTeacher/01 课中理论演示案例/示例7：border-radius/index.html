@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>border-radius的使用</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 10px solid red;
+           /*border-radius: 20px;        /!*四个角都是圆角，值一样*!/*/
+            /*border-radius: 20px 40px;     /!*左上右下是20px，右上左下是40px*!/*/
+            /*border-radius: 20px  10px  50px;     /!*左上是20px，右上左下是10px, 右下是50px*!/*/
+            border-radius: 20px  10px  50px  30px;     /*左上是20px，右上左下是10px, 右下是50px*/
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

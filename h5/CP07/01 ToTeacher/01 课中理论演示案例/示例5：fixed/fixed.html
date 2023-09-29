@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>fixed的使用</title>
+    <style>
+        body{
+        height: 1000px;
+        }
+        div:nth-of-type(1) {  /*第一个div设置绝对定位*/
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        div:nth-of-type(2) {  /*第二个div设置固定定位*/
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div>div1</div>
+<div>div2</div>
+</body>
+</html>
