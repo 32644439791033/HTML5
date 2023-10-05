@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>响应式布局</title>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" href="css/3.css">
+          <script src="./js/33.js"></script>
+        <style>
+            *{
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+}
+#head, #foot,#foots, #main
+{
+    height: 100px;
+    width: 1200px;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto;
+}
+
+#head ul{
+    width: 100%;
+    background-color: #eaa267;
+}
+#head ul li{
+    width:33.3%;
+    float: left;
+    text-align: center;
+    list-style: none;font-size: 20px;
+}
+#foot .jindu{
+    width: 100%;
+    height: 50px;
+    background-color: cornflowerblue;
+    background-image: url(../img/矩形\ 182@2x.png) ;
+}
+#foot .jindu li{
+    width: 20%;
+    height: 70%;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+    line-height: 30px;
+    color:#fff;
+}
+#foot .jindu .jd{
+    width: 70%;
+    height: 70%;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 30px;
+    color:#fff;
+}
+#foot ul{
+    width: 100%;
+}
+#foot ul li{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    list-style: none;font-size: 20px;
+}
+#foot ul li img{
+    width: 10%;
+}
+#foot ul li span{
+    font-size: 14px;
+    color: rgb(72, 70, 73);
+}
+#foots ul{
+    width: 100%;
+}
+#foots ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    list-style: none;font-size: 20px;
+}
+
+            #main{
+                height: 450px;
+                margin: 10px auto;
+                overflow: hidden;
+            }
+             .center{
+                /* height: 600px; */
+                float: left;
+                height: 450px;
+                background: url(./img/组\ 1559@2x.png) no-repeat ;
+                background-size: 100%;
+            }
+            .center img{
+                margin-top: 100px;
+                width: 53%;
+                height:70%;
+            }
+            .center ul{
+                width: 200px;
+                height: 30px;
+                font-size: 14px;
+                display: inline-block;
+                position: absolute;
+                margin-top: 10px;
+                border-radius: 10px;
+                margin-left: 30px;
+                background-color: rgb(173, 170, 177);
+            }
+            .center ul li{
+                width: 80px;
+                height: 25px;
+                line-height: 25px;
+                display: inline-block;
+                margin-left: 10px;
+                margin-top: 2px;
+                border-radius: 5px;
+                float:left;
+            }
+            .center{
+                width: 100%;
+                border-left: 10px solid #FFF;
+                border-right: 10px solid #FFF;
+                box-sizing: border-box;
+                
+            }
+            @media only screen and (max-width: 1200px) {
+                #head, #foot,#foots, #main{
+                width: 100%;
+                }
+            }
+            @media only screen and (max-width: 980px) {
+                .right{
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 640px) {
+                .left, .center, .right{
+                    width: 100%;
+                    display: block;
+                    height: 200px;
+                    line-height: 200px;
+                }
+                .center{
+                    width: 100%;
+                    border: hidden;
+                    border-top: 10px  solid #FFFFFF;
+                    border-bottom: 10px solid #FFFFFF;
+                    height:100%;
+                    line-height: 600px;
+                }
+                /* #head ul{
+                    display: none;
+                }
+                #head div{
+                    display: block;
+                } */
+            }
+           
+        </style>  
+    </head>
+    <body>
+        <div>
+            <header id="head">
+                <ul>
+                    <li><img src="img/路径 5032@2x.png" alt=""></li>
+                    <li>一寸</li>
+                    <li><img src="img/矩形 52@2x.png" alt=""><span style="position: absolute;margin-left: -43px;font-size: 14px;color: #FFF;">保存</span></li>
+                </ul>
+            </header>
+            <section id="main">
+                <div class="center">
+                    <ul>
+                        <li style="background-color: #FFF;">单张照</li>
+                        <li>排版照</li>
+                    </ul>
+                    <img src="img//组 1565@2x.png" alt="">
+                </div>
+            </section>
+            <footer id="foot">
+                <ul class="jindu">
+                    <li>磨皮强度</li>
+                    <li class="jd ">
+                        <!-- <progress min="0" max="500" value="350" style="width: 200px;" >350 degrees</progress> -->
+                        <div class="progress">
+                            <div class="progress_bg">
+                                <div class="progress_bar"></div>
+                            </div>
+                            <div class="progress_btn"></div>
+                            <!-- <div class="text">0%</div> -->
+                        </div>
+                    </li>
+                </ul>
+                <!-- <div class="jindu">
+                    <div class="div">磨皮强调</div>
+
+                    <div style="width:500px;height:20px">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;">50%</div>
+                        </div>
+                    </div>
+                                        </div> -->
+                <ul>
+                    <li>       
+                        <img src="img/组 1307@2x.png" alt="">
+                        <span style="position: absolute;margin-top: 20px;margin-left: -30px;color: rgb(88, 5, 241);">磨皮</span>
+                    </li>
+                    <li>
+                        <img src="img/组 1310@2x.png" alt="">
+                        <span style="position: absolute;margin-top: 20px;margin-left: -30px;">瘦脸</span>
+                    </li>
+                    <li>
+                        <img src="img/组 1311@2x.png" alt="">
+                        <span style="position: absolute;margin-top: 20px;margin-left: -30px;">美白</span>
+                    </li>
+                </ul>
+                <div id="foots">
+                    <ul>
+                        <li>      
+                            <img src="img/组 1356@2x.png" alt="">
+                        <span style="position: absolute;margin-top: 20px;margin-left: -30px;">背景</span>
+                        </li>
+                        <li>
+                            <img src="img/组 1357@2x.png" alt="">
+                        <span style="position: absolute;margin-top: 20px;margin-left: -30px;">美颜</span>
+                        </li>
+                        <li>
+                            <img src="img/组 1291@2x.png" alt="">
+                        <span style="position: absolute;margin-top: 20px;margin-left: -30px;">服饰</span>
+                        </li>
+                        <li>
+                            <img src="img/组 1301@2x.png" alt="">
+                        <span style="position: absolute;margin-top: 20px;margin-left: -30px;">尺寸</span>
+                        </li>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var that =this;
+            var width = document.querySelector('.progress').offsetWidth;
+            var audio=document.querySelector('audio');
+            /*audio.addEventListener("loadedmetadata", function() {*/                       
+            // 拖拽事件
+            var touch = document.querySelector('.progress_btn');
+            touch.addEventListener("touchstart",handleStart,false); // 触摸开始
+            touch.addEventListener("touchmove",handleMove,false); // 开始移动
+            touch.addEventListener("touchend",handleEnd,false); // 触摸结束
+            var x1,y1,oldTime,newTime,olfLeft,newLeft;
+            function handleStart(e){
+                e.preventDefault();
+                var touches = e.changedTouches;
+                x1 = touches[0].pageX;
+                y1 = touches[0].pageY;
+                olfLeft = document.querySelector('.progress_btn').offsetLeft;
+                // document.getElementById("audio").pause();
+                // that.pause=true;
+            }
+            function handleMove(e){
+                e.preventDefault();
+                var x2 = e.changedTouches[0].pageX;
+                var y2 = e.changedTouches[0].pageY;
+                newLeft = x2-x1;
+                nowLeft = olfLeft+newLeft;
+                if(nowLeft<0){
+                    nowLeft = 0;
+                }
+                if(nowLeft>width){
+                    nowLeft = width;
+                }
+                document.querySelector('.progress_bar').style.width=nowLeft+"px";
+                document.querySelector('.progress_btn').style.left=(nowLeft-(nowLeft>(width-10)?10:5))+"px";
+                var per = nowLeft/width;
+                console.log(per);
+                // that.nowAudioTime = 136 * per;//音频应该显示的时间
+                // that.current_time=that.nowAudioTime;
+                // audio.currentTime = that.nowAudioTime;              
+            }
+            function handleEnd(e){
+                touch.removeEventListener("touchmove",handleEnd,false);
+                // document.querySelector('audio').currentTime = that.nowAudioTime;
+                // console.log(document.querySelector('audio').currentTime);
+                // document.querySelector('audio').play();
+                // that.pause=false;
+            }
+        </script>
+    </body>
+</html>

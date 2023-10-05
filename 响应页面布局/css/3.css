@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+}
+#head, #foot,#foots, #main
+{
+    height: 100px;
+    width: 1200px;
+    /*width: 85%;*/
+    text-align: center;
+    font-size: 48px;
+    line-height: 100px;
+    margin: 0 auto;
+}
+#head ul{
+    display: block;
+    width: 95%;
+}
+#head ul li{
+    width: 23%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    list-style: none;font-size: 14px;
+}
+#foot .jindu{
+    width: 100%;
+    height: 50px;
+    background-image: url(../img/矩形\ 182@2x.png) ;
+}
+#foot .jindu p{
+    width: 10%;
+   color: #fff;
+   font-size: 14px;
+   height: 30px;
+   padding-top: -20px;
+   background-color: chartreuse;
+   /* float: left; */
+}
+#foot .jindu .div{
+   color: #fff;
+   font-size: 14px;
+   display: inline;
+   line-height: 20px;
+   position:absolute;margin-top: 10px;margin-left: -430px;
+}
+#foot ul{
+    width: 100%;
+    background-color: rgb(25, 208, 40);
+}
+#foot ul li{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    list-style: none;font-size: 20px;
+}
+#foot ul li img{
+    width: 10%;
+}
+#foot ul li span{
+    font-size: 14px;
+    color: rgb(72, 70, 73);
+}
+#foots ul{
+    width: 100%;
+}
+#foots ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    list-style: none;font-size: 20px;
+}
+.progress{position: relative; width:200px;top: 8px;}
+.progress_bg{height: 10px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;background-color:#f2f2f2;}
+.progress_bar{background: #6f3ff3; width: 0; height: 10px; border-radius: 5px;}
+.progress_btn{width: 20px; height: 20px; border-radius: 5px; position: absolute;background:#fff; 
+left: 0px; margin-left: -10px; top:-5px; cursor: pointer;border:1px #ddd solid;box-sizing:border-box;}
+.progress_btn:hover{border-color:#F7B824;}
